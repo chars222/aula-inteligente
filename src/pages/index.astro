@@ -1,17 +1,54 @@
 ---
-
+import "../styles/global.css";
 ---
 
-<html lang="en">
+<html lang="es">
 	<head>
 		<meta charset="utf-8" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>Aula Inteligente - Guía de Prompts</title>
 	</head>
-	<body>
-		<h1>Astro</h1>
+	<body class="bg-slate-50 font-sans text-slate-900">
+		<main class="max-w-4xl mx-auto py-12 px-6">
+			
+			<header class="text-center mb-12">
+				<div class="inline-block bg-cyan-100 text-cyan-700 text-xs font-bold px-3 py-1 rounded-full mb-4 uppercase tracking-widest">
+					Exclusivo para Docentes
+				</div>
+				<h1 class="text-4xl md:text-5xl font-black mb-4">Guía de Prompts de Oro</h1>
+				<p class="text-xl text-slate-600">Copia y pega estas instrucciones en ChatGPT para ahorrar horas de trabajo.</p>
+			</header>
+
+			<div class="space-y-6">
+				<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+					<h2 class="text-lg font-bold mb-3 flex items-center">
+						<span class="bg-cyan-500 text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 text-sm">1</span>
+						Planificador Semanal Express
+					</h2>
+					<div class="relative bg-slate-900 text-slate-300 p-4 rounded-xl font-mono text-sm leading-relaxed">
+						<code id="prompt1">
+							"Actúa como un experto en pedagogía. Diseña una planificación semanal para la asignatura de [Materia]..."
+						</code>
+						<button 
+							onclick="navigator.clipboard.writeText(document.getElementById('prompt1').innerText)"
+							class="absolute top-2 right-2 bg-slate-700 hover:bg-cyan-600 text-white px-3 py-1 rounded-md text-xs transition"
+						>
+							Copiar
+						</button>
+					</div>
+				</div>
+			</div>
+
+            <div class="mt-16 bg-gradient-to-br from-cyan-600 to-blue-700 p-10 rounded-3xl text-center text-white shadow-2xl">
+                <h3 class="text-2xl font-bold mb-4">¿Quieres dominar la IA por completo?</h3>
+                <p class="mb-8 opacity-90">Aprende el sistema paso a paso que están usando miles de docentes en España y Latinoamérica.</p>
+                <a href="TU_LINK_DE_AFILIADO" class="bg-white text-blue-700 font-bold py-4 px-10 rounded-2xl hover:scale-105 transition-transform inline-block text-lg">
+                    Ver curso certificado ahora
+                </a>
+            </div>
+
+		</main>
 	</body>
 </html>
