@@ -7,5 +7,12 @@ import tailwindcss from '@tailwindcss/vite';
 export default defineConfig({
   vite: {
     plugins: [tailwindcss()]
+  },
+  devToolbar: {
+    enabled: false // Esto desactiva la barra flotante por completo
+  },
+  server: {
+    host: true, // Esto habilita la red para todos los dispositivos
+    port: 4321
   }
 });
