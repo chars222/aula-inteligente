@@ -2,6 +2,8 @@
 import "../styles/global.css";
 ---
 
+
+
 <html lang="es">
 	<head>
 		<meta charset="utf-8" />
@@ -29,10 +31,82 @@ import "../styles/global.css";
 					</h2>
 					<div class="relative bg-slate-900 text-slate-300 p-4 rounded-xl font-mono text-sm leading-relaxed">
 						<code id="prompt1">
-							"Actúa como un experto en pedagogía. Diseña una planificación semanal para la asignatura de [Materia]..."
+							"Actúa como un experto en pedagogía. Diseña una planificación semanal para la asignatura de [Materia] para alumnos de [Grado/Edad]. El tema central es [Tema]. Incluye objetivos de aprendizaje, 3 actividades prácticas y criterios de evaluación. Formatea todo en una tabla clara."
 						</code>
 						<button 
-							onclick="navigator.clipboard.writeText(document.getElementById('prompt1').innerText)"
+							onclick="copiarPrompt('prompt1')"
+							class="absolute top-2 right-2 bg-slate-700 hover:bg-cyan-600 text-white px-3 py-1 rounded-md text-xs transition"
+						>
+							Copiar
+						</button>
+					</div>
+				</div>
+
+				<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+					<h2 class="text-lg font-bold mb-3 flex items-center">
+						<span class="bg-cyan-500 text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 text-sm">2</span>
+						El Creador de Exámenes "Anti-Estrés"
+					</h2>
+					<div class="relative bg-slate-900 text-slate-300 p-4 rounded-xl font-mono text-sm leading-relaxed">
+						<code id="prompt2">
+							"Basándote en el siguiente texto: [Pegar contenido], genera un examen de 10 preguntas de opción múltiple con 4 opciones cada una. Incluye la clave de respuestas al final y asegúrate de que las preguntas evalúen la comprensión lectora y no solo la memoria."
+						</code>
+						<button 
+							onclick="copiarPrompt('prompt2')"
+							class="absolute top-2 right-2 bg-slate-700 hover:bg-cyan-600 text-white px-3 py-1 rounded-md text-xs transition"
+						>
+							Copiar
+						</button>
+					</div>
+				</div>
+
+				<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+					<h2 class="text-lg font-bold mb-3 flex items-center">
+						<span class="bg-cyan-500 text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 text-sm">3</span>
+						El Adaptador de Contenido (Inclusión)
+					</h2>
+					<div class="relative bg-slate-900 text-slate-300 p-4 rounded-xl font-mono text-sm leading-relaxed">
+						<code id="prompt3">
+							"Tengo un texto sobre [Tema] nivel primaria. Necesito que lo reescribas para un alumno con dificultades de aprendizaje/TDAH, usando oraciones más cortas, lenguaje sencillo y puntos clave resaltados en negrita."
+						</code>
+						<button 
+							onclick="copiarPrompt('prompt3')"
+							class="absolute top-2 right-2 bg-slate-700 hover:bg-cyan-600 text-white px-3 py-1 rounded-md text-xs transition"
+						>
+							Copiar
+						</button>
+					</div>
+				</div>
+
+				<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+					<h2 class="text-lg font-bold mb-3 flex items-center">
+						<span class="bg-cyan-500 text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 text-sm">4</span>
+						El Generador de Rúbricas en Segundos
+					</h2>
+					<div class="relative bg-slate-900 text-slate-300 p-4 rounded-xl font-mono text-sm leading-relaxed">
+						<code id="prompt4">
+							"Crea una rúbrica de evaluación para un proyecto de [Tipo de proyecto, ej: Maqueta o Ensayo] sobre [Tema]. Los niveles de desempeño deben ser: Excelente, Satisfactorio, Necesita Mejorar. Evalúa: Creatividad, Contenido y Puntualidad."
+						</code>
+						<button 
+							onclick="copiarPrompt('prompt4')"
+							class="absolute top-2 right-2 bg-slate-700 hover:bg-cyan-600 text-white px-3 py-1 rounded-md text-xs transition"
+						>
+							Copiar
+						</button>
+					</div>
+				</div>
+
+				<div class="bg-white p-6 rounded-2xl shadow-sm border border-slate-200">
+					<h2 class="text-lg font-bold mb-3 flex items-center">
+						<span class="bg-cyan-500 text-white w-7 h-7 rounded-full flex items-center justify-center mr-3 text-sm">5</span>
+						Redactor de Mensajes para Padres
+					</h2>
+					<div class="relative bg-slate-900 text-slate-300 p-4 rounded-xl font-mono text-sm leading-relaxed">
+						<code id="prompt5">
+							"Redacta un mensaje amable y profesional para enviar por WhatsApp a los padres de familia, informando que el próximo [Fecha] tendremos una actividad especial de [Actividad] y que deben traer [Materiales]. Usa un tono cercano y motivador."
+						</code>
+						<button 
+							onclick="copiarPrompt('prompt5')"
 							class="absolute top-2 right-2 bg-slate-700 hover:bg-cyan-600 text-white px-3 py-1 rounded-md text-xs transition"
 						>
 							Copiar
@@ -50,5 +124,29 @@ import "../styles/global.css";
             </div>
 
 		</main>
+
+		<script is:inline>
+		function copiarPrompt(id) {
+			const text = document.getElementById(id).innerText;
+			
+			// Intento 1: API moderna
+			if (navigator.clipboard && window.isSecureContext) {
+			navigator.clipboard.writeText(text);
+			alert("¡Prompt copiado!");
+			} else {
+			// Intento 2: Método "Legacy" para HTTP/Móviles
+			const textArea = document.createElement("textarea");
+			textArea.value = text;
+			document.body.appendChild(textArea);
+			textArea.select();
+			try {
+				document.execCommand('copy');
+			} catch (err) {
+				console.error('Error al copiar', err);
+			}
+			document.body.removeChild(textArea);
+			}
+		}
+		</script>
 	</body>
 </html>
