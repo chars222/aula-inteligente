@@ -1,0 +1,127 @@
+[
+  {
+    "numero": "76",
+    "titulo": "Invitación a Evento Escolar",
+    "prompt": "Redacta una invitación creativa para los padres a la [FERIA/EVENTO] de la clase. Haz que suene emocionante y resalta el esfuerzo que los niños han puesto en sus proyectos."
+  },
+  {
+    "numero": "77",
+    "titulo": "Reporte de Progreso Cualitativo",
+    "prompt": "Escribe un mensaje corto para WhatsApp para informar a una familia sobre un logro específico (no académico) de su hijo, como ayudar a un compañero o mostrar liderazgo."
+  },
+  {
+    "numero": "78",
+    "titulo": "Guía de Apoyo en Casa",
+    "prompt": "Crea una lista de 5 actividades sencillas y sin pantallas que los padres pueden hacer en casa para reforzar el tema de [TEMA] esta semana."
+  },
+  {
+    "numero": "79",
+    "titulo": "Explicación de Metodología con IA",
+    "prompt": "Redacta una nota informativa para las familias explicando cómo y por qué estamos usando Inteligencia Artificial en clase de forma ética y supervisada."
+  },
+  {
+    "numero": "80",
+    "titulo": "Gestión de Reunión Difícil",
+    "prompt": "Dame un guion de 3 puntos para iniciar una reunión con un padre de familia que está molesto por una calificación, manteniendo la empatía y la firmeza profesional."
+  },
+  {
+    "numero": "81",
+    "titulo": "Discurso de Fin de Año",
+    "prompt": "Escribe un breve discurso de despedida de 2 minutos para mis alumnos. Debe ser emotivo, mencionar los retos superados y animarlos a seguir siendo curiosos."
+  },
+  {
+    "numero": "82",
+    "titulo": "Carta de Recomendación para Alumnos",
+    "prompt": "Crea un formato rellenable de carta de recomendación destacando habilidades del siglo XXI como creatividad, pensamiento crítico y colaboración."
+  },
+  {
+    "numero": "83",
+    "titulo": "Actividad de Cápsula del Tiempo",
+    "prompt": "Diseña una dinámica para que los alumnos escriban sus metas para el próximo año y cómo se sienten hoy. ¿Qué 3 preguntas no pueden faltar?"
+  },
+  {
+    "numero": "84",
+    "titulo": "Reconocimientos Fuera de la Caja",
+    "prompt": "Genera 10 categorías de premios divertidos para el final del curso (ej: El preguntador incansable, El maestro de la calma, El rey de los bocetos)."
+  },
+  {
+    "numero": "85",
+    "titulo": "Reflexión Profesional Docente",
+    "prompt": "Ayúdame a reflexionar sobre mi año escolar. Hazme 5 preguntas profundas para identificar qué método me funcionó mejor y qué debo soltar para el próximo ciclo."
+  },
+  {
+    "numero": "86",
+    "titulo": "Desconexión Digital Docente",
+    "prompt": "Crea un plan de 3 pasos para dejar de revisar correos y mensajes de trabajo después de las 6:00 PM sin sentir culpa profesional."
+  },
+  {
+    "numero": "87",
+    "titulo": "Meditación Guiada para Profesores",
+    "prompt": "Escribe el guion de una meditación de 3 minutos enfocada en liberar la tensión de los hombros y la mente después de un día difícil en el aula."
+  },
+  {
+    "numero": "88",
+    "titulo": "Menú Semanal Energético",
+    "prompt": "Sugiere un menú de almuerzos rápidos, económicos y saludables para un docente que tiene poco tiempo de descanso pero necesita energía para toda la tarde."
+  },
+  {
+    "numero": "89",
+    "titulo": "Afirmaciones Diarias Docentes",
+    "prompt": "Genera 5 afirmaciones positivas para repetir antes de entrar al aula, enfocadas en la paciencia, la autoridad afectiva y el disfrute de la enseñanza."
+  },
+  {
+    "numero": "90",
+    "titulo": "Organización del Escritorio (Feng Shui)",
+    "prompt": "Dame 3 consejos para organizar mi espacio de trabajo en casa para que sea más productivo y menos estresante visualmente."
+  },
+  {
+    "numero": "91",
+    "titulo": "Bio para Redes Sociales Educativas",
+    "prompt": "Escribe 3 opciones de biografía para mi Instagram o TikTok educativo (Legado Tecnológico). Debe sonar innovador, cercano y experto en IA y Canva."
+  },
+  {
+    "numero": "92",
+    "titulo": "Ideas de Contenido para LinkedIn",
+    "prompt": "Dame 3 temas para escribir artículos cortos en LinkedIn que me posicionen como un docente líder en transformación digital."
+  },
+  {
+    "numero": "93",
+    "titulo": "Guion para Presentar un Proyecto",
+    "prompt": "Crea una estructura de pitch de 3 minutos para presentar mi proyecto de [NOMBRE DEL PROYECTO] a la dirección del colegio y solicitar recursos."
+  },
+  {
+    "numero": "94",
+    "titulo": "Networking Docente",
+    "prompt": "Redacta un mensaje para contactar a otro docente en redes sociales cuyo trabajo admiro, con el fin de proponer una colaboración o intercambio de ideas."
+  },
+  {
+    "numero": "95",
+    "titulo": "Plan de Aprendizaje Continuo",
+    "prompt": "¿Qué 3 habilidades tecnológicas deberían ser mi prioridad aprender en los próximos 6 meses para no quedar desactualizado como docente?"
+  },
+  {
+    "numero": "96",
+    "titulo": "Mundo Paralelo Educativo",
+    "prompt": "Si el tema de [TEMA] fuera un superpoder, ¿cómo se usaría para salvar al mundo y qué limitaciones tendría?"
+  },
+  {
+    "numero": "97",
+    "titulo": "Canción Educativa",
+    "prompt": "Escribe una letra de canción corta (estilo rap o pop conocido) que resuma las reglas de [TEMA] para que los alumnos la memoricen cantando."
+  },
+  {
+    "numero": "98",
+    "titulo": "Diseño de App Ficticia",
+    "prompt": "Si mis alumnos tuvieran que diseñar una app que resuelva el problema de [TEMA], ¿qué 3 funciones principales debería tener y cómo se llamaría?"
+  },
+  {
+    "numero": "99",
+    "titulo": "Entrevista con mi Yo del Futuro",
+    "prompt": "Escribe un diálogo entre un docente de hoy y un docente del año 2050 sobre cómo ha cambiado la educación. ¿Qué consejo le da el docente del futuro al de hoy?"
+  },
+  {
+    "numero": "100",
+    "titulo": "El Prompt Final",
+    "prompt": "Actúa como mi mentor educativo. Después de leer todo lo que hemos planeado, ¿cuál es el consejo más importante que me das para que mi marca 'Aula Inteligente' cambie la vida de miles de docentes?"
+  }
+]

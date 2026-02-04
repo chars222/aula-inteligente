@@ -1,0 +1,127 @@
+[
+  {
+    "numero": "51",
+    "titulo": "Estructura de Presentación Dinámica",
+    "prompt": "Genera un guion de 8 diapositivas para una presentación en Canva sobre [TEMA]. Para cada diapositiva, dime: Título, 3 puntos clave y un 'prompt de imagen' para usar en el generador de imágenes de Canva."
+  },
+  {
+    "numero": "52",
+    "titulo": "Diseño de Infografía por Secciones",
+    "prompt": "Divide el proceso de [PROCESO, ej: El Ciclo del Agua] en 5 pasos numerados. Redacta un título llamativo y una descripción de 15 palabras para cada paso, ideal para una infografía vertical en Canva."
+  },
+  {
+    "numero": "53",
+    "titulo": "Creador de Juegos de Mesa",
+    "prompt": "Dame las reglas y el diseño de un tablero de juego de mesa imprimible en Canva sobre [TEMA]. Incluye 10 preguntas para las casillas de desafío."
+  },
+  {
+    "numero": "54",
+    "titulo": "Flashcards de Pregunta-Respuesta",
+    "prompt": "Genera una lista de 20 parejas de 'Concepto' y 'Definición' sobre [TEMA] para usar en la función de 'Creación en Lote' de Canva y generar 20 tarjetas de un solo clic."
+  },
+  {
+    "numero": "55",
+    "titulo": "Guion de Video Educativo Corto",
+    "prompt": "Escribe el guion para un video de 60 segundos (formato Reels/TikTok) que explique [TEMA]. Incluye indicaciones de qué elementos visuales de Canva poner en pantalla cada 5 segundos."
+  },
+  {
+    "numero": "56",
+    "titulo": "Generador de Quizzes para Kahoot o Quizizz",
+    "prompt": "Crea 10 preguntas de opción múltiple sobre [TEMA]. Formato: Pregunta, Opción A, Opción B, Opción C, Opción D y Respuesta Correcta. Hazlo en formato tabla para que pueda copiarlo fácilmente."
+  },
+  {
+    "numero": "57",
+    "titulo": "Ideas para Pizarra Digital",
+    "prompt": "Diseña una dinámica de lluvia de ideas para usar en una pizarra digital (Jamboard o Padlet) sobre [TEMA]. ¿Qué 3 preguntas disparadoras puedo poner en notas adhesivas virtuales?"
+  },
+  {
+    "numero": "58",
+    "titulo": "Simulación de Debate en Chat",
+    "prompt": "Actúa como dos historiadores con puntos de vista opuestos sobre [TEMA]. Escribe un diálogo de 5 mensajes entre ellos para que yo se lo muestre a mis alumnos y analicemos el conflicto."
+  },
+  {
+    "numero": "59",
+    "titulo": "Curación de Contenido Educativo",
+    "prompt": "Recomiéndame 3 tipos de videos o canales de YouTube que expliquen [TEMA] de forma segura para niños y dime qué actividad de reflexión puedo hacer tras verlos."
+  },
+  {
+    "numero": "60",
+    "titulo": "Instrucciones para Portafolio Digital",
+    "prompt": "Redacta una guía paso a paso para que mis alumnos organicen su portafolio digital en Google Sites sobre el proyecto [NOMBRE DEL PROYECTO]."
+  },
+  {
+    "numero": "61",
+    "titulo": "Ticket de Salida (Exit Ticket)",
+    "prompt": "Dame 3 opciones diferentes de 'tickets de salida' para evaluar qué aprendieron hoy sobre [TEMA] sin usar un examen tradicional."
+  },
+  {
+    "numero": "62",
+    "titulo": "Escalera de Metacognición",
+    "prompt": "Genera 4 preguntas basadas en la escalera de la metacognición (¿Qué he aprendido?, ¿Cómo lo he aprendido?, etc.) adaptadas al tema de hoy: [TEMA]."
+  },
+  {
+    "numero": "63",
+    "titulo": "Rúbrica de Trabajo en Equipo",
+    "prompt": "Crea una rúbrica de 3 niveles para evaluar la colaboración grupal. Criterios: Escucha activa, reparto de tareas y resolución de conflictos."
+  },
+  {
+    "numero": "64",
+    "titulo": "Feedback Sándwich",
+    "prompt": "Escribe un modelo de retroalimentación tipo 'sándwich' (positivo-mejora-positivo) para un alumno que ha hecho un gran esfuerzo en [ÁREA] pero necesita mejorar su ortografía y organización."
+  },
+  {
+    "numero": "65",
+    "titulo": "Generador de Comentarios para Boletines",
+    "prompt": "Redacta 5 frases profesionales y motivadoras para poner en los informes de notas de alumnos que han mostrado un gran progreso este trimestre."
+  },
+  {
+    "numero": "66",
+    "titulo": "El Abogado del Diablo",
+    "prompt": "Voy a enseñar [TEMA]. Dame 3 argumentos polémicos o 'mitos' comunes sobre este tema para que mis alumnos tengan que investigar y desmentirlos con pruebas."
+  },
+  {
+    "numero": "67",
+    "titulo": "Análisis de Noticias (Alfabetización Mediática)",
+    "prompt": "Crea una guía de 5 preguntas para que mis alumnos analicen si una noticia sobre [TEMA] es real o es 'fake news'."
+  },
+  {
+    "numero": "68",
+    "titulo": "Socrático Express",
+    "prompt": "Genera una serie de 5 preguntas encadenadas (método socrático) que guíen a un alumno a descubrir por sí mismo la respuesta a: [PREGUNTA COMPLEJA]."
+  },
+  {
+    "numero": "69",
+    "titulo": "Impacto en el Futuro",
+    "prompt": "¿Cómo afectará el avance de [TEMA o TECNOLOGÍA] a la sociedad en el año 2050? Dame 3 escenarios (positivo, negativo y neutro) para discutir en clase."
+  },
+  {
+    "numero": "70",
+    "titulo": "Roleplay de Juicio Histórico o Científico",
+    "prompt": "Organiza un juicio en el aula donde juzgamos a [PERSONAJE O CONCEPTO]. Define los roles: Juez, Fiscalía, Defensa y Testigos, con sus argumentos base."
+  },
+  {
+    "numero": "71",
+    "titulo": "El Viaje del Héroe Pedagógico",
+    "prompt": "Convierte el tema de [TEMA, ej: La fotosíntesis] en una historia de aventuras siguiendo el viaje del héroe. ¿Quién es el protagonista?, ¿cuál es su misión?, ¿quién es el villano?"
+  },
+  {
+    "numero": "72",
+    "titulo": "Cuento con Final Abierto",
+    "prompt": "Escribe un cuento de aproximadamente 200 palabras sobre [TEMA] que se detenga justo en el momento de clímax. Los alumnos deben escribir el final basado en lo aprendido."
+  },
+  {
+    "numero": "73",
+    "titulo": "Personificación de Conceptos",
+    "prompt": "Si el [CONCEPTO, ej: El sistema respiratorio] fuera una ciudad, ¿qué edificio sería cada órgano y qué trabajo haría cada habitante?"
+  },
+  {
+    "numero": "74",
+    "titulo": "Analogías Inusuales",
+    "prompt": "Explica [TEMA COMPLEJO] usando una analogía relacionada con [HOBBY DE LOS ALUMNOS, ej: Videojuegos o Fútbol]."
+  },
+  {
+    "numero": "75",
+    "titulo": "Carta desde el Futuro",
+    "prompt": "Escribe una carta escrita por un niño del año 2100 agradeciendo a los humanos del 2026 por haber aprendido y aplicado correctamente el concepto de [TEMA, ej: Reciclaje]."
+  }
+]

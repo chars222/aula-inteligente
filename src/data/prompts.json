@@ -1,0 +1,154 @@
+
+
+[
+  {
+    "numero": "01",
+    "titulo": "Planificación por Unidad",
+    "categoria": "Planificación",
+    "prompt": "Actúa como un experto en diseño curricular. Diseña una unidad didáctica de 4 semanas sobre [TEMA] para alumnos de [GRADO]. Incluye objetivos de aprendizaje basados en competencias y una secuencia lógica de contenidos."
+  },
+  {
+    "numero": "02",
+    "titulo": "Planificación de Clase Única",
+    "categoria": "Planificación",
+    "prompt": "Crea una estructura de clase de 60 minutos para el tema [TEMA]. Divide el tiempo en: Inicio (gancho inicial), Desarrollo (2 actividades prácticas) y Cierre (metacognición)."
+  },
+  {
+    "numero": "03",
+    "titulo": "Adaptación de Contenido",
+    "categoria": "Planificación",
+    "prompt": "Tengo este texto complejo sobre [TEMA]. Simplifícalo para que un niño de 10 años pueda entenderlo sin perder el rigor científico."
+  },
+  {
+    "numero": "04",
+    "titulo": "Generador de Objetivos SMART",
+    "categoria": "Planificación",
+    "prompt": "Redacta 5 objetivos de aprendizaje SMART para una clase de Ciencias sobre la fotosíntesis en 5º de primaria."
+  },
+  {
+    "numero": "05",
+    "titulo": "Conexión Curricular",
+    "categoria": "Planificación",
+    "prompt": "¿Cómo puedo conectar el tema de [TEMA A] con [TEMA B] para un proyecto interdisciplinario?"
+  },
+  {
+    "numero": "06",
+    "titulo": "Rúbrica Analítica",
+    "categoria": "Evaluación",
+    "prompt": "Genera una rúbrica analítica en formato tabla para evaluar un ensayo sobre [TEMA]. Criterios: Coherencia, Ortografía, Argumentación y Bibliografía. Niveles: Excelente, Bueno, Necesita Mejorar."
+  },
+  {
+    "numero": "07",
+    "titulo": "Examen de Opción Múltiple",
+    "categoria": "Evaluación",
+    "prompt": "Crea un cuestionario de 10 preguntas sobre [TEMA] con 4 opciones de respuesta cada una. Indica la respuesta correcta al final."
+  },
+  {
+    "numero": "08",
+    "titulo": "Preguntas de Reflexión Profunda",
+    "categoria": "Evaluación",
+    "prompt": "Genera 5 preguntas de orden superior (Taxonomía de Bloom: Analizar/Evaluar) para discutir el tema [TEMA] en clase."
+  },
+  {
+    "numero": "09",
+    "titulo": "Feedback Automático",
+    "categoria": "Evaluación",
+    "prompt": "Redacta 3 modelos de retroalimentación constructiva para un alumno que ha fallado en [CONCEPTO ESPECÍFICO], enfocándote en el crecimiento y no solo en el error."
+  },
+  {
+    "numero": "10",
+    "titulo": "Autoevaluación",
+    "categoria": "Evaluación",
+    "prompt": "Crea una hoja de autoevaluación de 5 preguntas para que los alumnos reflexionen sobre su desempeño en el trabajo grupal de hoy."
+  },
+  {
+    "numero": "11",
+    "titulo": "Guion para Infografía",
+    "categoria": "Canva",
+    "prompt": "Dame una estructura de 5 puntos clave para crear una infografía en Canva sobre [TEMA]. Cada punto debe tener un título corto y una explicación de máximo 20 palabras."
+  },
+  {
+    "numero": "12",
+    "titulo": "Ideas de Diapositivas",
+    "categoria": "Canva",
+    "prompt": "Diseña el esquema de una presentación de 7 diapositivas en Canva para explicar [TEMA]. Describe qué imagen debería ir en cada una y qué texto principal poner."
+  },
+  {
+    "numero": "13",
+    "titulo": "Contenido para Flashcards",
+    "categoria": "Canva",
+    "prompt": "Genera un listado de 15 conceptos y definiciones breves sobre [TEMA] para crear tarjetas de estudio (flashcards) en Canva."
+  },
+  {
+    "numero": "14",
+    "titulo": "Prompt de Imagen Magic Media",
+    "categoria": "Canva",
+    "prompt": "Describe una ilustración estilo Pixar de un [CONCEPTO, ej: Átomo] que sea amigable y colorido para usar en una diapositiva educativa."
+  },
+  {
+    "numero": "15",
+    "titulo": "Certificado de Logro",
+    "categoria": "Canva",
+    "prompt": "Redacta el texto para un diploma de 'Genio de la Innovación' que entregaré a mis alumnos al finalizar el proyecto de [TEMA]."
+  },
+  {
+    "numero": "16",
+    "titulo": "Correo a Padres (Positivo)",
+    "categoria": "Gestión",
+    "prompt": "Escribe un correo amable para los padres de un alumno que ha mejorado notablemente su participación en clase de [MATERIA]."
+  },
+  {
+    "numero": "17",
+    "titulo": "Correo a Padres (Preocupación)",
+    "categoria": "Gestión",
+    "prompt": "Redacta un mensaje profesional y empático para informar a un representante que su hijo está teniendo dificultades con [TEMA], sugiriendo una reunión breve."
+  },
+  {
+    "numero": "18",
+    "titulo": "Normas de Clase Creativas",
+    "categoria": "Gestión",
+    "prompt": "Genera 5 reglas de convivencia para el laboratorio de computación redactadas de forma divertida y positiva."
+  },
+  {
+    "numero": "19",
+    "titulo": "Dinámica de Grupo (Icebreaker)",
+    "categoria": "Gestión",
+    "prompt": "Dame 3 ideas de juegos de 5 minutos para iniciar la clase y motivar a alumnos que vienen cansados después del recreo."
+  },
+  {
+    "numero": "20",
+    "titulo": "Resolución de Conflictos",
+    "categoria": "Gestión",
+    "prompt": "Actúa como mediador escolar. ¿Cómo puedo abordar una discusión entre dos alumnos por el uso de un material compartido de forma pedagógica?"
+  },
+  {
+    "numero": "21",
+    "titulo": "Integración de Herramientas",
+    "categoria": "Innovación",
+    "prompt": "Dime cómo puedo usar Kahoot y Canva juntos para enseñar el tema de [TEMA]."
+  },
+  {
+    "numero": "22",
+    "titulo": "Script para Video Educativo",
+    "categoria": "Innovación",
+    "prompt": "Escribe un guion de 2 minutos para un video de TikTok/Reels educativo donde explico de forma graciosa el concepto de [TEMA]."
+  },
+  {
+    "numero": "23",
+    "titulo": "Búsqueda de Recursos",
+    "categoria": "Innovación",
+    "prompt": "Enumera 5 sitios web gratuitos y seguros donde mis alumnos puedan investigar sobre [TEMA]."
+  },
+  {
+    "numero": "24",
+    "titulo": "Simulación de Personaje Histórico",
+    "categoria": "Innovación",
+    "prompt": "Actúa como [PERSONAJE, ej: Albert Einstein]. Responde a mis alumnos por qué es importante tu teoría para la vida diaria."
+  },
+  {
+    "numero": "25",
+    "titulo": "Generador de Prompts para Alumnos",
+    "categoria": "Innovación",
+    "prompt": "Crea un Prompt que yo pueda darles a mis alumnos para que ellos mismos usen la IA de forma ética para revisar sus borradores de escritura."
+  }
+]

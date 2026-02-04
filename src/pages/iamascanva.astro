@@ -1,9 +1,6 @@
 ---
 import '../styles/global.css';
 ---
----
-/* Tu lógica de Astro si la necesitas */
----
 <html lang="es">
 <head>
     <meta charset="utf-8" />
@@ -11,102 +8,184 @@ import '../styles/global.css';
     <title>Aula Inteligente | Domina la IA en el Aula</title>
 </head>
 <main class="bg-white font-sans text-slate-800">
-  
-  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
-    <span class="bg-cyan-100 text-cyan-700 px-4 py-1 rounded-full text-sm font-bold tracking-wide uppercase">
-      El Sistema 2-en-1 para Docentes
+
+<section class="relative py-20 px-6 overflow-hidden bg-white">
+  <div class="max-w-5xl mx-auto text-center relative z-10">
+    
+    <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-red-50 text-red-700 border border-red-100 mb-8 animate-pulse">
+      <span class="relative flex h-2 w-2 mr-2">
+        <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+        <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+      </span>
+      Metodología Anti-Saturación Docente 2026
     </span>
-    <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mt-6 leading-tight">
-      Crea contenido con <span class="text-cyan-600">IA</span> y diséñalo con <span class="text-purple-600">Canva</span>
+
+    <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
+      Detén el agotamiento: Planifica con 
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-600">IA</span> 
+      y diseña con 
+      <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-600">Canva</span>
     </h1>
-    <p class="text-xl text-slate-600 mt-6 max-w-2xl mx-auto">
-      La fórmula definitiva para planificar clases en segundos y generar materiales que tus alumnos amarán. <strong>Recupera tus fines de semana hoy mismo.</strong>
+
+    <p class="mt-8 text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+      No dejes que el papeleo agote tu salud. Automatiza tus clases en segundos y 
+      <span class="text-slate-900 font-semibold underline decoration-cyan-400 decoration-4 underline-offset-4">
+        recupera tus domingos hoy mismo.
+      </span>
     </p>
 
-    <div class="mt-12 aspect-video bg-slate-100 rounded-3xl shadow-2xl border-8 border-white overflow-hidden flex items-center justify-center">
-      <p class="text-slate-400 italic text-sm">[ Aquí va tu video de la IA y el resultado en Canva ]</p>
-    </div>
-  </section>
+  </div>
+  
+  <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] -z-10 opacity-50"></div>
 
-  <section class="py-12 bg-white px-6">
-  <div class="max-w-4xl mx-auto text-center">
-    <h2 class="text-2xl md:text-3xl font-bold text-slate-800">
-      ¿Te suena familiar alguna de estas situaciones?
-    </h2>
-    <div class="grid md:grid-cols-3 gap-8 mt-10">
-      <div class="p-6 rounded-2xl bg-red-50 border border-red-100">
-        <span class="text-3xl">😫</span>
-        <p class="mt-4 text-slate-700 text-sm">
-          Pasas tus domingos diseñando presentaciones que tus alumnos ignoran a los 5 minutos.
+<div class="mt-12 aspect-video bg-slate-100 rounded-3xl shadow-2xl border-8 border-white overflow-hidden flex items-center justify-center relative">
+  <iframe 
+    class="absolute top-0 left-0 w-full h-full"
+    src="https://www.youtube.com/embed/YBxCyOU0u2k" 
+    title="Aula Inteligente - Demo" 
+    frameborder="0" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+</div>
+</section>
+<section class="py-16 bg-slate-50 px-6">
+  <div class="max-w-5xl mx-auto">
+    <div class="text-center mb-12">
+      <h2 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+        Ser docente en 2026 no debería ser un deporte de riesgo
+      </h2>
+      <p class="text-lg text-slate-600 mt-4">Las estadísticas no mienten, pero tú puedes ser parte del cambio.</p>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+        <div class="text-cyan-600 font-bold text-4xl mb-4">71%</div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3">Ansiedad y Agotamiento</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          La sobrecarga laboral está agotando la salud mental del profesorado. El estrés crónico ya no es la excepción, es la norma.
         </p>
       </div>
-      <div class="p-6 rounded-2xl bg-red-50 border border-red-100">
-        <span class="text-3xl">⏳</span>
-        <p class="mt-4 text-slate-700 text-sm">
-          Sientes que la carga administrativa te roba el tiempo de calidad con tu familia.
+
+      <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+        <div class="text-cyan-600 font-bold text-4xl mb-4">8h+</div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3">Caos Administrativo</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          El exceso de papeleo y la planificación manual te roban el tiempo que deberías dedicar a lo que amas: enseñar.
         </p>
       </div>
-      <div class="p-6 rounded-2xl bg-red-50 border border-red-100">
-        <span class="text-3xl">📉</span>
-        <p class="mt-4 text-slate-700 text-sm">
-          Te sientes abrumado por la tecnología y no sabes por dónde empezar a usar la IA.
+
+      <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+        <div class="text-cyan-600 font-bold text-4xl mb-4">60%</div>
+        <h3 class="text-xl font-bold text-slate-800 mb-3">Desgaste Físico</h3>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Desde tensiones musculares frente a la pantalla hasta problemas de voz. Tu cuerpo está pagando el precio de un sistema obsoleto.
         </p>
       </div>
     </div>
-    <p class="mt-10 text-lg font-medium text-slate-600 italic">
-      "La educación cambió, y no tienes por qué quedarte atrás trabajando el triple."
-    </p>
+
+    <div class="mt-12 bg-cyan-900 rounded-3xl p-8 text-center text-white">
+      <p class="text-xl font-medium italic">
+        "La IA no va a reemplazar a los docentes, pero los docentes que usan IA y Canva sí reemplazarán a los que sufren en silencio."
+      </p>
+    </div>
   </div>
 </section>
-  <section class="bg-slate-50 py-16 px-6">
-    <div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-      <div>
-        <h2 class="text-3xl font-bold text-slate-900 mb-6">¿Qué vas a lograr?</h2>
-        <ul class="space-y-4">
-          <li class="flex items-start">
-            <span class="bg-green-100 text-green-600 p-1 rounded-full mr-3 mt-1">✓</span>
-            <p><strong>Domina la IA:</strong> Crea unidades didácticas y rúbricas en 30 segundos.</p>
-          </li>
-          <li class="flex items-start">
-            <span class="bg-green-100 text-green-600 p-1 rounded-full mr-3 mt-1">✓</span>
-            <p><strong>Efecto Wow con Canva:</strong> Transforma textos en presentaciones y juegos visuales.</p>
-          </li>
-          <li class="flex items-start">
-            <span class="bg-green-100 text-green-600 p-1 rounded-full mr-3 mt-1">✓</span>
-            <p><strong>Cero Estrés:</strong> Automatiza la parte administrativa de tu labor docente.</p>
-          </li>
-        </ul>
-      </div>
-      <div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
-        <h3 class="text-2xl font-bold text-slate-900">Oferta Especial</h3>
-        <p class="text-slate-500 line-through mt-2">$197.00 USD</p>
-        <p class="text-5xl font-black text-cyan-600 mt-1">$29.00 USD</p>
-        <p class="text-sm text-slate-400 mt-2">* El sistema convierte automáticamente a tu moneda (Bolivianos, Euros, Pesos).</p>
-        
-        <a href="https://go.hotmart.com/M104230396T?ap=b9f0" 
-           class="block w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center font-bold py-4 rounded-xl mt-8 transition-all transform hover:scale-105 shadow-lg shadow-cyan-200">
-          ¡QUIERO EL ACCESO COMPLETO!
-        </a>
-        <p class="text-xs text-center text-slate-400 mt-4">✓ 7 días de garantía total • Acceso inmediato</p>
-      </div>
-    </div>
-  </section>
 
-  <section class="py-16 px-6 max-w-4xl mx-auto">
-    <h2 class="text-3xl font-bold text-center text-slate-900 mb-10">Regalo Exclusivo por hoy</h2>
-    <div class="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl p-8 text-white flex flex-col md:flex-row items-center">
-      <div class="md:w-1/3 mb-6 md:mb-0">
-        <div class="w-32 h-44 bg-white/20 backdrop-blur-sm rounded-lg border-2 border-white/50 flex items-center justify-center text-center p-4">
-          <span class="font-bold text-xs">PDF: 100 Prompts de Oro</span>
-        </div>
-      </div>
-      <div class="md:w-2/3 md:ml-8">
-        <h4 class="text-2xl font-bold">Guía Maestra de Prompts IA</h4>
-        <p class="mt-2 text-blue-50 leading-relaxed">
-          Al inscribirte al curso de Canva, te enviaré GRATIS mi guía personal de prompts para planificar cualquier asignatura en segundos. (Valorado en $47 USD).
-        </p>
-      </div>
+<section class="bg-slate-50 py-16 px-6">
+<div class="max-w-4xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+<div>
+<h2 class="text-3xl font-bold text-slate-900 mb-6">Tu nueva realidad como docente:</h2>
+<ul class="space-y-6">
+  <li class="flex items-start">
+    <div class="bg-cyan-100 text-cyan-600 p-2 rounded-lg mr-4 mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="Tag" />
+        <path d="M13 10V3L4 14h7v7l9-11h-7z" />
+      </svg>
     </div>
-  </section>
+    <div>
+      <p class="font-bold text-slate-900 text-lg">Adiós al Agotamiento (Burnout)</p>
+      <p class="text-slate-600 text-sm">Reduce tu carga de trabajo semanal en más de 10 horas. Usa la IA para lo tedioso y guarda tu energía mental para lo que realmente importa: tus alumnos.</p>
+    </div>
+  </li>
+  
+  <li class="flex items-start">
+    <div class="bg-purple-100 text-purple-600 p-2 rounded-lg mr-4 mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+      </svg>
+    </div>
+    <div>
+      <p class="font-bold text-slate-900 text-lg">Impacto Visual y Motivación</p>
+      <p class="text-slate-600 text-sm">Convierte planes de estudio planos en experiencias visuales con Canva. Mejora la disciplina en el aula captando la atención de tus estudiantes desde el primer segundo.</p>
+    </div>
+  </li>
+
+  <li class="flex items-start">
+    <div class="bg-green-100 text-green-600 p-2 rounded-lg mr-4 mt-1">
+      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+      </svg>
+    </div>
+    <div>
+      <p class="font-bold text-slate-900 text-lg">Recupera tu Salud y Tiempo</p>
+      <p class="text-slate-600 text-sm">Elimina las posturas estáticas interminables frente al monitor. Automatiza la burocracia y las rúbricas para que tus tardes vuelvan a ser tuyas y de tu familia.</p>
+    </div>
+  </li>
+</ul>
+</div>
+<div class="bg-white p-8 rounded-2xl shadow-xl border border-slate-200">
+<h3 class="text-2xl font-bold text-slate-900">Oferta Especial</h3>
+<p class="text-slate-500 line-through mt-2">$197.00 USD</p>
+<p class="text-5xl font-black text-cyan-600 mt-1">$29.00 USD</p>
+<p class="text-sm text-slate-400 mt-2">* El sistema detectará tu país y mostrará el precio exacto en tu moneda local 
+    (aprox. <strong>30€ para España</strong>)</p>
+
+<a href="https://go.hotmart.com/M104230396T?ap=b9f0"
+class="block w-full bg-cyan-600 hover:bg-cyan-700 text-white text-center font-bold py-4 rounded-xl mt-8 transition-all transform hover:scale-105 shadow-lg shadow-cyan-200">
+¡QUIERO EL ACCESO COMPLETO!
+</a>
+<p class="text-xs text-center text-slate-400 mt-4">✓ 7 días de garantía total • Acceso inmediato</p>
+</div>
+</div>
+</section>
+
+<section class="py-16 px-6 max-w-4xl mx-auto">
+<h2 class="text-3xl font-bold text-center text-slate-900 mb-10">Regalo Exclusivo por hoy</h2>
+<div class="bg-gradient-to-br from-cyan-500 to-blue-600 rounded-3xl p-8 text-white flex flex-col md:flex-row items-center">
+<div class="md:w-1/3 mb-6 md:mb-0">
+<div class="w-32 h-44 bg-white/20 backdrop-blur-sm rounded-lg border-2 border-white/50 flex items-center justify-center text-center p-4">
+<span class="font-bold text-xs">PDF: 100 Prompts de Oro</span>
+</div>
+</div>
+<div class="md:w-2/3 md:ml-8">
+<h4 class="text-2xl font-bold">Guía Maestra de Prompts IA</h4>
+<p class="mt-2 text-blue-50 leading-relaxed">
+Al inscribirte al curso de Canva, te enviaré GRATIS mi guía personal de prompts para planificar cualquier asignatura en segundos. (Valorado en $47 USD).
+</p>
+</div>
+</div>
+</section>
 
 </main>
+
+<footer class="bg-slate-900 text-slate-400 py-12 px-6 text-center text-xs">
+  <div class="max-w-3xl mx-auto space-y-4">
+    <p>
+      <strong>Aula Inteligente</strong> - Innovación Educativa 2026. Todos los derechos reservados.
+    </p>
+    <p>
+      Este sitio web no es parte del sitio web de Facebook o Facebook Inc. Además, este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
+    </p>
+    <p>
+      <strong>Descargo de responsabilidad:</strong> Los resultados pueden variar de persona a persona. Las herramientas de IA y Canva son complementos para la labor docente y requieren aprendizaje y práctica.
+    </p>
+    <div class="flex justify-center gap-6 mt-4 underline">
+      <a href="#">Políticas de Privacidad</a>
+      <a href="#">Términos de Servicio</a>
+      <a href="https://wa.me/TU_NUMERO">Contacto</a>
+    </div>
+  </div>
+</footer>

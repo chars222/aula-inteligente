@@ -1,0 +1,127 @@
+[
+  {
+    "numero": "26",
+    "titulo": "Explicación por Analogía (Matemáticas)",
+    "prompt": "Actúa como profesor de matemáticas. Explica el concepto de [TEMA, ej: Fracciones] utilizando una analogía con la vida real (ej: una pizza o un juego) para que un alumno de 8 años lo visualice."
+  },
+  {
+    "numero": "27",
+    "titulo": "Generador de Problemas de Contexto",
+    "prompt": "Crea 3 problemas matemáticos de [TEMA, ej: Ecuaciones de primer grado] basados en situaciones cotidianas de [PAÍS, ej: Colombia/España], usando precios y contextos locales."
+  },
+  {
+    "numero": "28",
+    "titulo": "Laboratorio Virtual (Ciencias)",
+    "prompt": "Diseña una guía de experimento casero sobre [TEMA, ej: Estados de la materia] usando solo materiales que un alumno pueda encontrar en su cocina. Incluye una sección de '¿Por qué sucede esto?'."
+  },
+  {
+    "numero": "29",
+    "titulo": "Análisis Literario Creativo",
+    "prompt": "Genera un cuadro comparativo entre el personaje principal de [LIBRO] y un personaje de una película moderna para analizar sus arquetipos."
+  },
+  {
+    "numero": "30",
+    "titulo": "Escritura Creativa (Prompts para Alumnos)",
+    "prompt": "Escribe 5 inicios de historias de ciencia ficción relacionados con el tema de [CIENCIAS, ej: El sistema solar] para que los alumnos desarrollen un cuento corto."
+  },
+  {
+    "numero": "31",
+    "titulo": "Práctica de Idiomas",
+    "prompt": "Crea un diálogo breve de 10 líneas entre dos personas en un [LUGAR, ej: Aeropuerto] que incluya 5 verbos en pasado simple. Deja espacios en blanco para que el alumno los complete."
+  },
+  {
+    "numero": "32",
+    "titulo": "Entrevista a un Objeto Histórico",
+    "prompt": "Actúa como [OBJETO, ej: La brújula de Colón]. Explica en primera persona cuál fue tu papel en el descubrimiento de América y cómo te sentías."
+  },
+  {
+    "numero": "33",
+    "titulo": "Viajero en el Tiempo (Geografía)",
+    "prompt": "Escribe una postal desde [CIUDAD/PAÍS] describiendo su relieve, clima y economía actual como si fueras un turista explorador."
+  },
+  {
+    "numero": "34",
+    "titulo": "Debate de Época",
+    "prompt": "Plantea los argumentos a favor y en contra de [EVENTO HISTÓRICO] para organizar un debate en clase. Divide a los alumnos en dos bandos con puntos clave para cada uno."
+  },
+  {
+    "numero": "35",
+    "titulo": "Análisis de Obra de Arte",
+    "prompt": "Describe los elementos simbólicos de la pintura [OBRA] y genera 3 preguntas para que los alumnos descubran qué sentimientos quería transmitir el autor."
+  },
+  {
+    "numero": "36",
+    "titulo": "Simplificación Cognitiva (TDAH)",
+    "prompt": "Tengo esta instrucción larga: [INSTRUCCIÓN]. Divídela en pasos numerados muy cortos, claros y visuales para un alumno con dificultades de atención."
+  },
+  {
+    "numero": "37",
+    "titulo": "Adaptación para Dislexia",
+    "prompt": "Reescribe el siguiente texto sobre [TEMA] utilizando oraciones cortas, lenguaje directo y evitando estructuras gramaticales complejas o confusas."
+  },
+  {
+    "numero": "38",
+    "titulo": "Guion Social (Autismo)",
+    "prompt": "Crea un guion social breve para explicarle a un alumno con TEA cómo debe actuar y qué puede esperar durante una salida escolar al museo."
+  },
+  {
+    "numero": "39",
+    "titulo": "Lectura Fácil",
+    "prompt": "Adapta este concepto científico: [CONCEPTO] al formato de 'Lectura Fácil' para alumnos con discapacidad intelectual ligera."
+  },
+  {
+    "numero": "40",
+    "titulo": "Desafío para Altas Capacidades",
+    "prompt": "Diseña una actividad de extensión o profundización sobre [TEMA] que requiera investigación autónoma y pensamiento lateral para un alumno con altas capacidades."
+  },
+  {
+    "numero": "41",
+    "titulo": "Escape Room Educativo",
+    "prompt": "Diseña los 3 acertijos principales para un Escape Room en el aula sobre el tema [TEMA]. Cada acertijo debe dar un código numérico para abrir un candado virtual."
+  },
+  {
+    "numero": "42",
+    "titulo": "Sistema de Puntos y Rangos",
+    "prompt": "Crea un sistema de 'Rangos' (ej: de Aprendiz a Maestro Galáctico) para mi clase de [ASIGNATURA], definiendo qué misiones deben cumplir para subir de nivel."
+  },
+  {
+    "numero": "43",
+    "titulo": "Misterio en el Aula",
+    "prompt": "Escribe una breve historia de misterio sobre 'El caso de [TEMA] desaparecido'. Los alumnos deben resolver pistas basadas en conocimientos de la materia para hallar al culpable."
+  },
+  {
+    "numero": "44",
+    "titulo": "Juego de Roles (Roleplay)",
+    "prompt": "Define 4 perfiles de personajes para un juego de roles sobre [TEMA]. Cada personaje debe tener un objetivo secreto y un recurso especial."
+  },
+  {
+    "numero": "45",
+    "titulo": "Resumen de Textos Largos",
+    "prompt": "Resume este artículo pedagógico en 5 puntos clave y dime cómo puedo aplicarlo mañana mismo en el aula: [PEGAR TEXTO]."
+  },
+  {
+    "numero": "46",
+    "titulo": "Rúbrica de Coevaluación",
+    "prompt": "Crea una escala sencilla del 1 al 5 para que los alumnos evalúen el trabajo de sus compañeros de grupo de forma respetuosa."
+  },
+  {
+    "numero": "47",
+    "titulo": "Reflexión de Fin de Día",
+    "prompt": "Dame 3 preguntas rápidas de 1 minuto para que mis alumnos respondan antes de salir de clase y yo pueda saber qué tanto entendieron hoy."
+  },
+  {
+    "numero": "48",
+    "titulo": "Planificador de Reunión de Ciclo",
+    "prompt": "Crea un orden del día para una reunión de profesores sobre [TEMA], limitando cada punto a 10 minutos para asegurar que terminemos a tiempo."
+  },
+  {
+    "numero": "49",
+    "titulo": "Mensaje de Motivación",
+    "prompt": "Redacta una frase corta y potente para poner en la pizarra cada lunes que motive a mis alumnos a ser curiosos y constantes."
+  },
+  {
+    "numero": "50",
+    "titulo": "Organizador de Tareas Semanales",
+    "prompt": "Ayúdame a priorizar estas 10 tareas docentes [LISTA TAREAS] usando la Matriz de Eisenhower (Urgente vs Importante)."
+  }
+]

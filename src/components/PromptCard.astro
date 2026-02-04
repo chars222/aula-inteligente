@@ -1,0 +1,26 @@
+---
+const { numero, titulo, categoria, prompt, tip } = Astro.props;
+---
+<div class="mb-8 break-inside-avoid group">
+  <div class="flex items-center justify-between mb-2">
+    <h3 class="text-lg font-bold text-slate-800">
+      {numero}. {titulo}
+    </h3>
+    <span class="text-[10px] font-mono text-slate-400 uppercase tracking-widest bg-slate-100 px-2 py-1 rounded">
+      {categoria}
+    </span>
+  </div>
+  
+  <div class="relative bg-white border-2 border-slate-200 rounded-2xl p-6 transition-all hover:border-cyan-400 shadow-sm">
+    <p class="text-slate-800 font-mono text-sm leading-relaxed">
+      {prompt}
+    </p>
+    
+    <div class="mt-4 flex gap-2">
+      <span class="text-[9px] bg-cyan-50 text-cyan-700 font-bold px-2 py-0.5 rounded border border-cyan-100 uppercase">
+        Copy & Paste
+      </span>
+    </div>
+  </div>
+  {tip && <p class="mt-2 text-xs text-slate-500 italic">💡 Tip: {tip}</p>}
+</div>
