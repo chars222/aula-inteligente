@@ -1,0 +1,304 @@
+---
+import '../styles/global.css';
+---
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Aula Inteligente | Domina la IA en el Aula</title>
+      <!-- Meta Pixel Code -->
+      <script is:inline>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '1612310340199891');
+      fbq('track', 'PageView');
+      </script>
+      <noscript><img height="1" width="1" style="display:none"
+      src="https://www.facebook.com/tr?id=1612310340199891&ev=PageView&noscript=1"
+      /></noscript>
+      <!-- End Meta Pixel Code -->
+<style>
+  .btn-latido {
+    display: inline-block;
+    width: 100%;
+    max-width: 500px;
+    padding: 20px;
+    background-color: #ea580c; /* cyan-600 */
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 900;
+    text-transform: uppercase;
+    text-decoration: none;
+    border-radius: 1.5rem; /* rounded-3xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease;
+    
+    /* ANIMACIÓN PRINCIPAL */
+    animation: pulso-infinito 2s infinite ease-in-out;
+  }
+
+  .btn-latido:hover {
+    background-color: #f97316; /* cyan-500 */
+    animation-play-state: paused; /* Se detiene al poner el mouse para facilitar el clic */
+  }
+
+  @keyframes pulso-infinito {
+    0% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(8, 145, 178, 0.7);
+    }
+    50% {
+      transform: scale(1.05);
+      box-shadow: 0 0 20px 10px rgba(8, 145, 178, 0);
+    }
+    100% {
+      transform: scale(1);
+      box-shadow: 0 0 0 0 rgba(8, 145, 178, 0);
+    }
+  }
+</style>
+<main class="bg-white font-sans text-slate-800">
+
+  <section class="relative py-20 px-6 overflow-hidden bg-white text-center">
+    <div class="max-w-5xl mx-auto relative z-10">
+      <span class="inline-flex items-center px-4 py-1.5 rounded-full text-sm font-semibold bg-red-50 text-red-700 border border-red-100 mb-8 animate-pulse">
+        <span class="relative flex h-2 w-2 mr-2">
+          <span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-red-400 opacity-75"></span>
+          <span class="relative inline-flex rounded-full h-2 w-2 bg-red-500"></span>
+        </span>
+        Metodología Anti-Saturación Docente 2026
+      </span>
+
+      <h1 class="text-4xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.1]">
+        Detén el agotamiento: Planifica con 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-500 to-cyan-600">IA</span> 
+        y diseña con 
+        <span class="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-purple-600">Canva</span>
+      </h1>
+
+      <p class="mt-8 text-xl md:text-2xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
+        No dejes que el papeleo agote tu salud. Automatiza tus clases en segundos y 
+        <span class="text-slate-900 font-semibold underline decoration-cyan-400 decoration-4 underline-offset-4">
+          recuperar tus domingos hoy mismo.
+        </span>
+      </p>
+
+      <div class="mt-12 aspect-video bg-slate-100 rounded-3xl shadow-2xl border-8 border-white overflow-hidden flex items-center justify-center relative max-w-4xl mx-auto">
+        <iframe 
+          class="absolute top-0 left-0 w-full h-full"
+          src="https://www.youtube.com/embed/YBxCyOU0u2k?rel=0&modestbranding=1"
+          title="Aula Inteligente - Demo" 
+          frameborder="0" 
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+    <div class="absolute top-0 left-1/2 -translate-x-1/2 w-full h-full bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:32px_32px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] -z-10 opacity-50"></div>
+  </section>
+
+  <section class="py-16 bg-slate-50 px-6">
+    <div class="max-w-5xl mx-auto">
+      <div class="text-center mb-12">
+        <h2 class="text-3xl md:text-4xl font-bold text-slate-900 leading-tight">
+          Ser docente en 2026 no debería ser un deporte de riesgo
+        </h2>
+        <p class="text-lg text-slate-600 mt-4">Las estadísticas no mienten, pero tú puedes ser parte del cambio.</p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+          <div class="text-cyan-600 font-bold text-4xl mb-4">71%</div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Ansiedad y Agotamiento</h3>
+          <p class="text-slate-600 text-sm">La sobrecarga laboral está agotando la salud mental del profesorado.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+          <div class="text-cyan-600 font-bold text-4xl mb-4">8h+</div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Caos Administrativo</h3>
+          <p class="text-slate-600 text-sm">El exceso de papeleo te roba el tiempo que deberías dedicar a enseñar.</p>
+        </div>
+        <div class="bg-white p-8 rounded-3xl shadow-sm border border-slate-200">
+          <div class="text-cyan-600 font-bold text-4xl mb-4">60%</div>
+          <h3 class="text-xl font-bold text-slate-800 mb-3">Desgaste Físico</h3>
+          <p class="text-slate-600 text-sm">Tu cuerpo está pagando el precio de un sistema obsoleto.</p>
+        </div>
+      </div>
+
+      <div class="mt-12 bg-cyan-900 rounded-3xl p-8 text-center text-white">
+        <p class="text-xl font-medium italic">
+          "La IA no va a reemplazar a los docentes, pero los docentes que usan IA y Canva sí reemplazarán a los que sufren en silencio."
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white py-16 px-6">
+  <div class="max-w-7xl mx-auto"> <div class="grid lg:grid-cols-2 gap-16 items-start">
+      
+      <div>
+        <h2 class="text-3xl font-bold text-slate-900 mb-8">Tu nueva realidad como docente:</h2>
+        <ul class="space-y-8">
+          <li class="flex items-start">
+            <div class="bg-cyan-100 text-cyan-600 p-2 rounded-lg mr-4 mt-1 shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-slate-900 text-lg leading-tight">Adiós al Agotamiento (Burnout)</p>
+              <p class="text-slate-600 text-sm mt-1">Reduce tu carga semanal en más de 10 horas. Usa la IA para lo tedioso.</p>
+            </div>
+          </li>
+          
+          <li class="flex items-start">
+            <div class="bg-purple-100 text-purple-600 p-2 rounded-lg mr-4 mt-1 shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" /><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-slate-900 text-lg leading-tight">Impacto Visual y Motivación</p>
+              <p class="text-slate-600 text-sm mt-1">Convierte planes planos en experiencias visuales con Canva.</p>
+            </div>
+          </li>
+          
+          <li class="flex items-start">
+            <div class="bg-green-100 text-green-600 p-2 rounded-lg mr-4 mt-1 shrink-0">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" /></svg>
+            </div>
+            <div>
+              <p class="font-bold text-slate-900 text-lg leading-tight">Recupera tu Salud y Tiempo</p>
+              <p class="text-slate-600 text-sm mt-1">Automatiza la burocracia y las rúbricas para que tus tardes vuelvan a ser tuyas y de tu familia.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-50 p-6 rounded-3xl border border-slate-100">
+        <div class="text-center mb-6">
+          <h2 class="text-2xl font-black text-slate-900">
+            Comunidad en <span class="text-red-600">YouTube</span>
+          </h2>
+          <p class="text-slate-500 text-xs italic">Capturas reales de docentes aplicando el método.</p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-1 gap-4">
+          <div class="space-y-4">
+            <img src="https://mentesmart.store/testimonio1.jpg" class="rounded-xl shadow-sm border border-white w-full" alt="Testimonio 1">
+            <img src="https://mentesmart.store/testimonio3.jpeg" class="rounded-xl shadow-sm border border-white w-full" alt="Testimonio 3">
+          </div>
+          <div class="space-y-4">
+            <img src="https://mentesmart.store/testimonio2.jpeg" class="rounded-xl shadow-sm border border-white w-full" alt="Testimonio 2">
+            <div class="bg-white p-4 rounded-xl border border-slate-200 text-center">
+              <p class="text-[10px] font-bold text-cyan-600 uppercase">✅ Verificado</p>
+              <p class="text-[9px] text-slate-400 mt-1">Resultados 100% Reales</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+  <section class="py-16 bg-slate-50 px-6">
+    <div class="max-w-6xl mx-auto text-center">
+      <h2 class="text-3xl font-extrabold text-slate-900 mb-4">No solo es teoría, es <span class="text-cyan-600">acción inmediata</span></h2>
+      <p class="text-lg text-slate-600 mb-12 max-w-2xl mx-auto">Mira el material profesional que estarás creando en minutos.</p>
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div class="bg-white p-2 rounded-2xl shadow-md transform hover:scale-105 transition-transform">
+          <img src="/gifchatgpt.gif" alt="Planificación" class="rounded-xl w-full h-64 object-cover" />
+          <p class="mt-4 font-bold text-slate-700">Planificaciones Didácticas</p>
+        </div>
+        <div class="bg-white p-2 rounded-2xl shadow-md transform hover:scale-105 transition-transform">
+          <img src="/gifcanva.gif" alt="Presentación" class="rounded-xl w-full h-64 object-cover" />
+          <p class="mt-4 font-bold text-slate-700">Presentaciones de Impacto</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="max-w-3xl mx-auto my-12 px-6">
+    <div class="relative bg-yellow-50 border-4 border-dashed border-yellow-400 rounded-3xl p-8 shadow-inner overflow-hidden">
+      <div class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-black px-4 py-2 rotate-12 shadow-lg">¡GRATIS HOY!</div>
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <div class="text-5xl">🎁</div>
+        <div>
+          <h3 class="text-2xl font-black text-slate-900 leading-tight">BONO EXCLUSIVO: La Guía de 100 Prompts de Oro</h3>
+          <p class="mt-2 text-slate-700">Biblioteca personal para que la IA diseñe tus clases por ti. <span class="font-bold">Valorado en $47 USD.</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="text-center py-16 bg-white border-t border-slate-100">
+  
+  <div class="max-w-md mx-auto mb-8">
+    <div class="bg-red-600 text-white px-6 py-3 rounded-2xl shadow-lg transform -rotate-1 animate-pulse">
+      <p class="font-black text-sm uppercase tracking-wider">
+        🔥 ¡QUEDAN SOLO 14 CUPOS CON DESCUENTO!
+      </p>
+      <div class="w-full bg-red-900/30 h-1.5 mt-2 rounded-full overflow-hidden">
+        <div class="bg-white h-full w-[28%] rounded-full shadow-[0_0_10px_#fff]"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="max-w-lg mx-auto border-[3px] border-slate-900 rounded-[2.5rem] p-10 shadow-[12px_12px_0px_0px_rgba(15,23,42,1)] bg-white relative">
+    
+    <p class="text-slate-500 font-bold uppercase tracking-widest text-[10px] mb-4">Acceso Inmediato al Sistema Completo</p>
+    
+    <div class="flex flex-col items-center">
+      <span class="text-slate-300 text-3xl font-bold line-through decoration-red-500/50 decoration-4">$197 USD</span>
+      <div class="flex items-start">
+        <span class="text-7xl md:text-8xl font-black text-slate-900">$29</span>
+        <span class="text-2xl font-bold text-slate-900 mt-4 ml-1">USD</span>
+      </div>
+    </div>
+
+    <p class="text-slate-500 mt-6 text-xs leading-relaxed font-medium">
+      *Pago único. Sin suscripciones. <br/>
+      Moneda local disponible en <strong>Bolivia, Colombia y España</strong>.
+    </p>
+
+    <div class="text-center py-10">
+    <a id="cta-button" 
+      href="https://go.hotmart.com/M104230396T?ap=698e" 
+      class="btn-latido">
+      ¡SÍ, QUIERO MI TIEMPO DE VUELTA!
+    </a>
+  </div>
+    
+    <div class="mt-8 flex flex-col items-center gap-3">
+      <p class="text-[9px] text-slate-400 font-bold uppercase tracking-widest">Pago 100% Seguro vía Hotmart</p>
+      <div class="flex justify-center gap-5 opacity-100 hover:opacity-100 ">
+        <img src="https://mentesmart.store/visa.svg" class="h-8" alt="Visa" />
+        <img src="https://mentesmart.store/mastercard.svg" class="h-8" alt="Mastercard" />
+        <img src="https://mentesmart.store/paypal.svg" class="h-8" alt="Paypal" />
+      </div>
+    </div>
+  </div>
+</div>
+<a href="https://wa.me/59176305194?text=Hola%20Carlos!%20Vengo%20de%20la%20web%20Mente%20Smart.%20Me%20interesa%20el%20Pack%20de%20IA%20y%20Canva." 
+   target="_blank"
+   style="position:fixed; width:60px; height:60px; bottom:20px; right:20px; z-index:9999; display:flex; align-items:center; justify-content:center;">
+    
+    <img src="https://mentesmart.store/whatssappV2.svg" 
+         alt="WhatsApp" 
+         style="width:100%; height:100%; filter: drop-shadow(2px 2px 3px rgba(0,0,0,0.3));" />
+</a>
+</main>
+
+
+
+<footer class="bg-slate-900 text-slate-400 py-12 px-6 text-center text-[10px] md:text-xs">
+  <div class="max-w-3xl mx-auto space-y-4">
+    <p><strong>Aula Inteligente</strong> - Innovación Educativa 2026. Todos los derechos reservados.</p>
+    <p>Este sitio web no es parte de Facebook o Facebook Inc. FACEBOOK es una marca registrada de FACEBOOK, Inc.</p>
+    <div class="flex justify-center gap-6 mt-4 underline">
+      <a href="/terminos">Privacidad</a><a href="/terminos">Términos</a><a href="https://wa.me/59176305194">Contacto</a>
+    </div>
+  </div>
+</footer>
