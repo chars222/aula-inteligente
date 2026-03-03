@@ -1,0 +1,414 @@
+---
+import '../styles/global.css';
+---
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    
+    <script is:inline src="https://cdn.tailwindcss.com"></script>
+    
+    <script is:inline>
+        window.tailwind = window.tailwind || { config: {} };
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            sage: '#8A9A5B', 
+                            rose: '#D4A5A5', 
+                            gold: '#C5A059', 
+                            cream: '#FDFBF7', 
+                            dark: '#2D2D2D',  
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <title>Alquimia Natural | Jabonería Artesanal desde Casa</title>
+</head>
+
+<body class="bg-brand-cream text-brand-dark font-sans antialiased">
+
+    <!-- BARRA DE URGENCIA -->
+    <div class="bg-brand-rose text-white text-center py-2 px-4 text-sm font-semibold tracking-wide">
+        ✨ OFERTA ESPECIAL: OBTÉN MÁS DE 12 BONOS DE REGALO INSCRIBIÉNDOTE HOY
+    </div>
+
+    <!-- HERO SECTION -->
+    <section class="relative py-16 md:py-24 px-6 overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <span class="text-brand-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4 block italic underline decoration-brand-rose/30 underline-offset-4">Alquimia Natural Presenta</span>
+            <h1 class="font-serif text-4xl md:text-6xl text-brand-dark leading-tight mb-8">
+                Recupera la paz de estar con tus hijos, construyendo un <span class="italic text-brand-sage font-medium">ingreso seguro</span> desde casa.
+            </h1>
+            <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
+                El método comprobado para dominar el arte de los jabones de lujo y empezar tu emprendimiento en tan solo 20 días. Baja inversión, alta rentabilidad y sin sacrificar ni un solo abrazo.
+            </p>
+
+            <div class="flex flex-col items-center gap-4">
+                <a href="#oferta" class="bg-brand-sage hover:bg-brand-dark text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition-all transform hover:scale-105 active:scale-95">
+                    QUIERO VER EL TEMARIO Y EMPEZAR
+                </a>
+                <div class="flex items-center gap-2 text-sm text-gray-500">
+                    <span class="flex -space-x-2">
+                        <div class="w-8 h-8 rounded-full bg-brand-rose border-2 border-brand-cream shadow-sm"></div>
+                        <div class="w-8 h-8 rounded-full bg-brand-sage border-2 border-brand-cream shadow-sm"></div>
+                        <div class="w-8 h-8 rounded-full bg-brand-gold border-2 border-brand-cream shadow-sm"></div>
+                    </span>
+                    <span>Únete a más de 50,000 alumnas satisfechas</span>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Elementos decorativos -->
+        <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-brand-rose opacity-10 rounded-full blur-3xl"></div>
+        <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-80 h-80 bg-brand-sage opacity-10 rounded-full blur-3xl"></div>
+    </section>
+
+    <!-- IDENTIFICACIÓN / EMPATÍA -->
+    <section class="py-20 bg-white px-6">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="font-serif text-3xl md:text-4xl mb-12">Si estás aquí, probablemente sientes que...</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 text-left">
+                <div class="bg-brand-cream p-8 rounded-3xl border border-brand-rose/20 shadow-sm">
+                    <p class="text-brand-dark text-lg leading-relaxed">
+                        <span class="text-brand-rose font-bold text-xl mr-2">✗</span> Necesitas generar un ingreso extra para el hogar, pero los trabajos tradicionales te alejarían demasiadas horas de tus hijos.
+                    </p>
+                </div>
+                <div class="bg-brand-cream p-8 rounded-3xl border border-brand-sage/20 shadow-sm">
+                    <p class="text-brand-dark text-lg leading-relaxed">
+                        <span class="text-brand-rose font-bold text-xl mr-2">✗</span> Tienes miedo de emprender porque te frustran las técnicas complicadas de internet y temes perder el poco dinero que puedes invertir.
+                    </p>
+                </div>
+            </div>
+            
+            <p class="mt-12 text-center text-lg font-medium text-brand-sage uppercase tracking-widest">
+                Este programa está diseñado exactamente para resolver eso.
+            </p>
+        </div>
+    </section>
+
+    <!-- EL SISTEMA (LO QUE REALMENTE APRENDEN) -->
+    <section class="py-24 px-6">
+        <div class="max-w-6xl mx-auto text-center">
+            <h2 class="font-serif text-4xl mb-6">No es solo "hacer manualidades"</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto mb-16 text-lg">Es un método estructurado con más de 9 horas de contenido en video para que domines el producto, la técnica y las ventas.</p>
+            
+            <div class="grid md:grid-cols-3 gap-12">
+                <!-- Paso 1 -->
+                <div class="relative group bg-white p-8 rounded-3xl shadow-lg border border-brand-cream hover:-translate-y-2 transition-all">
+                    <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-brand-cream rounded-full text-brand-sage font-serif text-2xl font-bold">1</div>
+                    <h3 class="font-serif text-2xl mb-4 text-brand-dark">La Técnica Profesional</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm text-left">
+                        Aprenderás la base científica. Desde medir el pH y entender la sinergia de plantas, hasta dominar la técnica de Glicerina y la Saponificación en frío.
+                    </p>
+                </div>
+
+                <!-- Paso 2 -->
+                <div class="relative group bg-white p-8 rounded-3xl shadow-lg border border-brand-cream hover:-translate-y-2 transition-all">
+                    <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-brand-cream rounded-full text-brand-sage font-serif text-2xl font-bold">2</div>
+                    <h3 class="font-serif text-2xl mb-4 text-brand-dark">Líneas de Producto</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm text-left">
+                        Crearás jabones faciales, exfoliantes, terapéuticos, esotéricos y hermosos jabones para eventos sociales. Un catálogo irresistible.
+                    </p>
+                </div>
+
+                <!-- Paso 3 -->
+                <div class="relative group bg-white p-8 rounded-3xl shadow-lg border border-brand-cream hover:-translate-y-2 transition-all">
+                    <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-brand-cream rounded-full text-brand-sage font-serif text-2xl font-bold">3</div>
+                    <h3 class="font-serif text-2xl mb-4 text-brand-dark">El Negocio Real</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm text-left">
+                        Aprende a cobrar lo justo. Te damos la plantilla exacta para calcular tus precios, diseñar tu logo y vender por WhatsApp e Instagram.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- LA INSTRUCTORA (AUTORIDAD) -->
+    <section class="bg-brand-cream py-24 px-6 border-y border-brand-sage/20">
+        <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+            <div class="order-2 md:order-1 flex justify-center">
+                <!-- AQUI PONES LA FOTO DE ROCIO DIAZ -->
+                <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-xl bg-gray-200 flex items-center justify-center relative">
+                    <span class="text-gray-400 italic text-sm absolute"></span>
+                </div>
+            </div>
+            <div class="order-1 md:order-2">
+                <span class="text-brand-sage font-bold tracking-widest uppercase text-sm">Conoce a tu Instructora</span>
+                <h2 class="font-serif text-3xl md:text-4xl text-brand-dark mt-2 mb-6">Rocío Díaz</h2>
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    Emprendedora y creadora de jabones artesanales con más de 5 años de experiencia en cosmética natural.
+                </p>
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    "Pasé de ser profesional en el sector logístico a crear un negocio exitoso desde mi casa. Esto transformó mi vida y la de cientos de mis alumnas. Mi misión es ayudarte a descubrir tu potencial, emprender con seguridad y generar ingresos creando jabones que cuidan la piel y el medio ambiente."
+                </p>
+                <div class="bg-white p-4 rounded-xl border-l-4 border-brand-gold italic text-brand-dark shadow-sm">
+                    Su método paso a paso te garantiza resultados profesionales, incluso si jamás en tu vida has hecho una manualidad.
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIOS (PRUEBA SOCIAL) -->
+    <section class="bg-brand-rose/5 py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-serif text-4xl text-center mb-4 text-brand-dark">Historias de transformación real</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Mujeres que ya dieron el paso y hoy disfrutan de la tranquilidad de tener su propio negocio artesanal.</p>
+            
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Testimonio 1 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-rose relative">
+                    <div class="absolute -top-6 right-6 bg-brand-cream w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-sm border border-brand-rose/20">💬</div>
+                    <div class="flex text-brand-gold mb-4 text-lg">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Pensé que necesitaba mucho dinero para empezar. Con los $30 que invertí en los primeros materiales, hice mis primeros 15 jabones y los vendí todos a mis vecinas en un fin de semana."</p>
+                    <p class="font-bold text-brand-dark">— María G.</p>
+                </div>
+                <!-- Testimonio 2 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-sage relative">
+                    <div class="absolute -top-6 right-6 bg-brand-cream w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-sm border border-brand-sage/20">💬</div>
+                    <div class="flex text-brand-gold mb-4 text-lg">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Lo mejor no es el dinero extra que entra, sino que hago mis jabones en el comedor mientras mis hijos hacen la tarea a mi lado. Esa paz como madre no tiene precio."</p>
+                    <p class="font-bold text-brand-dark">— Laura P.</p>
+                </div>
+                <!-- Testimonio 3 -->
+                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-gold relative">
+                    <div class="absolute -top-6 right-6 bg-brand-cream w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-sm border border-brand-gold/20">💬</div>
+                    <div class="flex text-brand-gold mb-4 text-lg">★★★★★</div>
+                    <p class="text-gray-600 italic mb-6 leading-relaxed">"El módulo de ventas me abrió los ojos. Yo no sabía nada de Instagram, y ahora ya tengo pedidos recurrentes para baby showers. El curso se pagó solo el primer mes."</p>
+                    <p class="font-bold text-brand-dark">— Ana R.</p>
+                </div>
+            </div>
+            
+            <!-- CAPTURAS DE WHATSAPP / HOTMART -->
+            <div class="mt-12 text-center">
+                <p class="text-sm uppercase tracking-widest text-brand-sage font-bold mb-6">Resultados compartidos por nuestras alumnas</p>
+                <div class="flex flex-wrap justify-center gap-4">
+                    <!-- AQUI PONES LAS CAPTURAS DE WHATSAPP QUE DA EL PRODUCTOR -->
+                    <div class="w-64 h-40 bg-gray-200 rounded-xl flex items-center justify-center border border-gray-300 relative shadow-sm"><span class="text-gray-400 text-xs text-center px-2"></span></div>
+                    <div class="w-64 h-40 bg-gray-200 rounded-xl flex items-center justify-center border border-gray-300 relative shadow-sm"><span class="text-gray-400 text-xs text-center px-2"></span></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EL CURSO POR DENTRO Y CERTIFICADO -->
+    <section class="py-24 px-6 bg-white text-brand-dark">
+        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
+            <div class="order-2 md:order-1 space-y-8">
+                <div class="relative">
+                    <div class="absolute inset-0 bg-brand-sage/20 rounded-3xl rotate-3"></div>
+                    <div class="relative bg-brand-cream rounded-3xl shadow-xl overflow-hidden aspect-[4/3] flex flex-col items-center justify-center border-4 border-brand-dark px-10">
+                         <!-- AQUI PONES EL MOCKUP DEL CURSO -->
+                         <span class="text-brand-dark font-serif text-xl text-center font-bold absolute z-10 bg-white/80 p-4 rounded-xl"></span>
+                    </div>
+                </div>
+                <!-- CERTIFICADO -->
+                <div class="bg-brand-cream border border-brand-gold p-6 rounded-2xl flex items-center gap-6 shadow-md">
+                    <div class="w-1/3 bg-gray-200 rounded-lg aspect-[4/3] flex items-center justify-center relative">
+                        <!-- AQUI PONES LA IMAGEN DEL CERTIFICADO -->
+                        <span class="text-[10px] text-gray-500 text-center"></span>
+                    </div>
+                    <div class="w-2/3">
+                        <h4 class="font-bold text-brand-dark font-serif">Certificado Incluido</h4>
+                        <p class="text-sm text-gray-600 mt-1">Al finalizar, podrás descargar tu certificado personalizado avalando tus conocimientos como creadora artesanal.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="order-1 md:order-2">
+                <h2 class="font-serif text-4xl mb-8 leading-tight text-brand-dark">Todo lo que incluye tu inscripción hoy:</h2>
+                <ul class="space-y-4">
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sage mt-1">✔</span>
+                        <p class="text-gray-700"><strong>Más de 9 Horas en Video (70+ clases)</strong> distribuidas en 15 módulos prácticos.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sage mt-1">✔</span>
+                        <p class="text-gray-700"><strong>Comunidad VIP por 6 meses:</strong> Apoyo real vía WhatsApp para resolver todas tus dudas directamente.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sage mt-1">✔</span>
+                        <p class="text-gray-700"><strong>Lista de Proveedores:</strong> Para que compres tus ingredientes al mejor precio desde el día 1.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sage mt-1">✔</span>
+                        <p class="text-gray-700"><strong>Módulo de Rentabilidad:</strong> Aprende a cobrar lo justo y asegurar tus ganancias.</p>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <span class="text-brand-sage mt-1">✔</span>
+                        <p class="text-gray-700"><strong>Acceso vitalicio:</strong> Mira las clases las veces que quieras, a tu propio ritmo.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- BONOS REALES -->
+    <section class="bg-brand-rose/10 py-24 px-6">
+        <div class="max-w-5xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl text-center mb-4 text-brand-dark">No solo aprenderás a hacer jabones...</h2>
+            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Al inscribirte hoy, desbloqueas 12 BONOS DE REGALO para expandir tu catálogo y disparar tus ventas.</p>
+            
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Bono 1 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-sage flex items-start gap-4">
+                    <span class="text-3xl">🎁</span>
+                    <div>
+                        <h4 class="font-bold text-brand-dark">Clases: Jabones para Eventos y Bodas</h4>
+                        <p class="text-sm text-gray-600 mt-1">Aprende a hacer jabones tipo Cupcake y recuerdos para baby showers. (Ideal para pedidos por mayor).</p>
+                    </div>
+                </div>
+                <!-- Bono 2 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-sage flex items-start gap-4">
+                    <span class="text-3xl">🎁</span>
+                    <div>
+                        <h4 class="font-bold text-brand-dark">Calculadora Profesional de Costos</h4>
+                        <p class="text-sm text-gray-600 mt-1">Un archivo automatizado para calcular exactamente a cuánto vender sin perder dinero.</p>
+                    </div>
+                </div>
+                <!-- Bono 3 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-gold flex items-start gap-4">
+                    <span class="text-3xl">🎁</span>
+                    <div>
+                        <h4 class="font-bold text-brand-dark">Recetario: Champús y Acondicionadores</h4>
+                        <p class="text-sm text-gray-600 mt-1">Expande tu marca creando cosmética sólida capilar, una tendencia muy rentable hoy en día.</p>
+                    </div>
+                </div>
+                <!-- Bono 4 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-gold flex items-start gap-4">
+                    <span class="text-3xl">🎁</span>
+                    <div>
+                        <h4 class="font-bold text-brand-dark">Recetario: Bálsamos y Desodorantes</h4>
+                        <p class="text-sm text-gray-600 mt-1">Guías paso a paso para crear protectores labiales y desodorantes 100% naturales.</p>
+                    </div>
+                </div>
+                <!-- Bono 5 -->
+                <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-rose flex items-start gap-4 md:col-span-2">
+                    <span class="text-3xl">🎁</span>
+                    <div>
+                        <h4 class="font-bold text-brand-dark">+ 7 Bonos Adicionales de Lujo</h4>
+                        <p class="text-sm text-gray-600 mt-1">Incluye clases de Mantequilla Corporal, Jabones en forma de Gema, Jabón líquido para manos, Guía de macerados naturales, sinergia de plantas y recetarios completos por línea.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- OFERTA FINAL -->
+    <section id="oferta" class="py-24 px-6 bg-brand-cream relative">
+        <div class="max-w-3xl mx-auto">
+            <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-brand-gold/30">
+                <div class="bg-brand-dark py-6 text-center px-6">
+                    <h2 class="font-serif text-2xl md:text-3xl text-white">Comienza tu emprendimiento hoy</h2>
+                </div>
+                
+                <div class="p-8 md:p-12 text-center">
+                    <p class="text-gray-600 mb-6 text-lg">Acceso de por vida al programa completo + Soporte VIP + 12 Bonos Exclusivos.</p>
+                    
+                    <div class="mb-8">
+                        <span class="text-gray-400 line-through text-2xl font-light">$100.00 USD</span>
+                        <div class="text-6xl md:text-7xl font-bold text-brand-sage mt-2">$30.00 <span class="text-2xl">USD</span></div>
+                        <p class="text-brand-rose font-bold mt-4 animate-pulse text-sm tracking-widest uppercase">CUPÓN DE 70% APLICADO AUTOMÁTICAMENTE</p>
+                    </div>
+
+                    <a href="https://go.hotmart.com/V104688154N?ap=9d09" class="block w-full bg-brand-sage hover:bg-brand-dark text-white py-5 rounded-xl text-xl font-bold shadow-xl transition-all mb-6">
+                        INSCRIBIRME AHORA Y RECIBIR LOS BONOS
+                    </a>
+
+                    <!-- Garantía Real -->
+                    <div class="bg-gray-50 p-6 rounded-xl text-left flex gap-4 items-start border border-gray-100">
+                        <span class="text-3xl">🛡️</span>
+                        <div>
+                            <h4 class="font-bold text-brand-dark">Garantía Hotmart® de 7 Días</h4>
+                            <p class="text-sm text-gray-600 mt-1">Tienes 7 días para probar el curso por dentro. Si no supera tus expectativas, te reembolsamos el 100% de tu dinero SIN hacer preguntas. Tu compra es 100% segura.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PREGUNTAS FRECUENTES (FAQ) -->
+    <section class="py-20 px-6 bg-white border-t border-gray-100">
+        <div class="max-w-3xl mx-auto">
+            <h2 class="font-serif text-3xl md:text-4xl text-center mb-12 text-brand-dark">Preguntas Frecuentes</h2>
+            
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
+                        ¿El curso es presencial o en línea?
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Es 100% online. Al inscribirte, recibirás acceso inmediato a la plataforma donde podrás ver las más de 70 clases en video, a tu propio ritmo y las veces que quieras, de por vida.
+                    </p>
+                </details>
+
+                <!-- FAQ 2 -->
+                <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
+                        ¿Tendré soporte para resolver mis dudas?
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        ¡Por supuesto! Tendrás acceso a nuestra Comunidad VIP exclusiva por WhatsApp durante 6 meses, donde podrás hacer preguntas, enviar fotos de tus jabones y recibir correcciones de la instructora.
+                    </p>
+                </details>
+
+                <!-- FAQ 3 -->
+                <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
+                        ¿Cuáles son las formas de pago?
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        El pago se procesa a través de Hotmart, la plataforma educativa más segura de Latinoamérica. Puedes pagar con Tarjeta de Crédito, Débito, PayPal y, dependiendo de tu país, opciones de pago en efectivo (Oxxo, Efecty, Sencillito, etc.). Podrás ver tu moneda local al momento de hacer clic en el botón de inscripción.
+                    </p>
+                </details>
+
+                 <!-- FAQ 4 -->
+                 <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
+                    <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
+                        ¿Qué necesito para empezar?
+                        <span class="transition group-open:rotate-180">
+                            <svg fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24"><path d="M6 9l6 6 6-6"></path></svg>
+                        </span>
+                    </summary>
+                    <p class="text-gray-600 mt-4 leading-relaxed">
+                        Solo necesitas muchas ganas de aprender. Dentro del curso te daremos la lista de utensilios e ingredientes básicos para empezar con una inversión mínima (aprox. $30 USD en materiales), además de una lista de proveedores recomendados.
+                    </p>
+                </details>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="py-12 bg-white text-center border-t border-brand-rose/10">
+        <p class="font-serif text-2xl italic text-brand-rose mb-2">Alquimia Natural</p>
+        <p class="text-[10px] text-gray-400 max-w-3xl mx-auto leading-relaxed px-6 mt-6">
+            AVISO LEGAL: Este producto no garantiza la obtención de resultados económicos. Las referencias a ingresos son testimonios de alumnas reales que han aplicado lo aprendido con esfuerzo y dedicación. Cada emprendimiento requiere trabajo. Este sitio no es parte del sitio web de Facebook o Facebook Inc. Este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
+        </p>
+    </footer>
+
+</body>
+</html>
