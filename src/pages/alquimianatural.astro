@@ -24,7 +24,8 @@ import '../styles/global.css';
                             rose: '#D4A5A5', 
                             gold: '#C5A059', 
                             cream: '#FDFBF7', 
-                            dark: '#2D2D2D',  
+                            dark: '#2D2D2D',
+                            alert: '#E57373'
                         }
                     },
                     fontFamily: {
@@ -35,14 +36,31 @@ import '../styles/global.css';
             }
         }
     </script>
+    <style>
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+        
+        @keyframes fillBar {
+            from { width: 0%; }
+            to { width: 87%; }
+        }
+        .animate-progress {
+            animation: fillBar 1.5s ease-out forwards;
+        }
+        
+        /* Estilos personalizados para el reproductor de video */
+        video::-webkit-media-controls-panel {
+            background-image: linear-gradient(transparent, rgba(0, 0, 0, 0.7));
+        }
+    </style>
     <title>Alquimia Natural | Jabonería Artesanal desde Casa</title>
 </head>
 
 <body class="bg-brand-cream text-brand-dark font-sans antialiased">
 
     <!-- BARRA DE URGENCIA -->
-    <div class="bg-brand-rose text-white text-center py-2 px-4 text-sm font-semibold tracking-wide">
-        ✨ OFERTA ESPECIAL: OBTÉN MÁS DE 12 BONOS DE REGALO INSCRIBIÉNDOTE HOY
+    <div class="bg-brand-alert text-white text-center py-2 px-4 text-xs md:text-sm font-bold tracking-wide flex justify-center items-center gap-2 shadow-md">
+        <span class="animate-pulse">⚠️</span> ATENCIÓN: CUPÓN ACTIVO, PERO LOS CUPOS CON SOPORTE VIP EN WHATSAPP SON LIMITADOS
     </div>
 
     <!-- HERO SECTION -->
@@ -50,17 +68,17 @@ import '../styles/global.css';
         <div class="max-w-5xl mx-auto text-center relative z-10">
             <span class="text-brand-gold font-semibold tracking-[0.2em] uppercase text-sm mb-4 block italic underline decoration-brand-rose/30 underline-offset-4">Alquimia Natural Presenta</span>
             <h1 class="font-serif text-4xl md:text-6xl text-brand-dark leading-tight mb-8">
-                Recupera la paz de estar con tus hijos, construyendo un <span class="italic text-brand-sage font-medium">ingreso seguro</span> desde casa.
+                Recupera el control de tu tiempo y construye un <span class="italic text-brand-sage font-medium">ingreso seguro</span> desde casa.
             </h1>
             <p class="text-lg md:text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-                El método comprobado para dominar el arte de los jabones de lujo y empezar tu emprendimiento en tan solo 20 días. Baja inversión, alta rentabilidad y sin sacrificar ni un solo abrazo.
+                El método comprobado para dominar el arte de los jabones de lujo y empezar tu emprendimiento en tan solo 20 días. Baja inversión, alta rentabilidad y la libertad de ser dueña de tu propia vida.
             </p>
 
             <div class="flex flex-col items-center gap-4">
-                <a href="#oferta" class="bg-brand-sage hover:bg-brand-dark text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition-all transform hover:scale-105 active:scale-95">
+                <a href="https://go.hotmart.com/V104688154N?ap=9d09" target="_blank" rel="noopener noreferrer" class="bg-brand-sage hover:bg-brand-dark text-white px-12 py-5 rounded-full text-xl font-bold shadow-2xl transition-all transform hover:scale-105 active:scale-95">
                     QUIERO VER EL TEMARIO Y EMPEZAR
                 </a>
-                <div class="flex items-center gap-2 text-sm text-gray-500">
+                <div class="flex items-center gap-2 text-sm text-gray-500 mt-2">
                     <span class="flex -space-x-2">
                         <div class="w-8 h-8 rounded-full bg-brand-rose border-2 border-brand-cream shadow-sm"></div>
                         <div class="w-8 h-8 rounded-full bg-brand-sage border-2 border-brand-cream shadow-sm"></div>
@@ -71,7 +89,6 @@ import '../styles/global.css';
             </div>
         </div>
         
-        <!-- Elementos decorativos -->
         <div class="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-96 h-96 bg-brand-rose opacity-10 rounded-full blur-3xl"></div>
         <div class="absolute bottom-0 left-0 translate-y-1/2 -translate-x-1/4 w-80 h-80 bg-brand-sage opacity-10 rounded-full blur-3xl"></div>
     </section>
@@ -89,7 +106,7 @@ import '../styles/global.css';
                 </div>
                 <div class="bg-brand-cream p-8 rounded-3xl border border-brand-sage/20 shadow-sm">
                     <p class="text-brand-dark text-lg leading-relaxed">
-                        <span class="text-brand-rose font-bold text-xl mr-2">✗</span> Tienes miedo de emprender porque te frustran las técnicas complicadas de internet y temes perder el poco dinero que puedes invertir.
+                        <span class="text-brand-rose font-bold text-xl mr-2">✗</span> Estás cansada de depender de un solo sueldo o de un jefe, y buscas un "Plan B" seguro que te dé verdadera libertad e independencia.
                     </p>
                 </div>
             </div>
@@ -100,14 +117,13 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- EL SISTEMA (LO QUE REALMENTE APRENDEN) -->
+    <!-- EL SISTEMA -->
     <section class="py-24 px-6">
         <div class="max-w-6xl mx-auto text-center">
             <h2 class="font-serif text-4xl mb-6">No es solo "hacer manualidades"</h2>
             <p class="text-gray-600 max-w-2xl mx-auto mb-16 text-lg">Es un método estructurado con más de 9 horas de contenido en video para que domines el producto, la técnica y las ventas.</p>
             
             <div class="grid md:grid-cols-3 gap-12">
-                <!-- Paso 1 -->
                 <div class="relative group bg-white p-8 rounded-3xl shadow-lg border border-brand-cream hover:-translate-y-2 transition-all">
                     <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-brand-cream rounded-full text-brand-sage font-serif text-2xl font-bold">1</div>
                     <h3 class="font-serif text-2xl mb-4 text-brand-dark">La Técnica Profesional</h3>
@@ -116,7 +132,6 @@ import '../styles/global.css';
                     </p>
                 </div>
 
-                <!-- Paso 2 -->
                 <div class="relative group bg-white p-8 rounded-3xl shadow-lg border border-brand-cream hover:-translate-y-2 transition-all">
                     <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-brand-cream rounded-full text-brand-sage font-serif text-2xl font-bold">2</div>
                     <h3 class="font-serif text-2xl mb-4 text-brand-dark">Líneas de Producto</h3>
@@ -125,7 +140,6 @@ import '../styles/global.css';
                     </p>
                 </div>
 
-                <!-- Paso 3 -->
                 <div class="relative group bg-white p-8 rounded-3xl shadow-lg border border-brand-cream hover:-translate-y-2 transition-all">
                     <div class="mb-6 inline-flex items-center justify-center w-16 h-16 bg-brand-cream rounded-full text-brand-sage font-serif text-2xl font-bold">3</div>
                     <h3 class="font-serif text-2xl mb-4 text-brand-dark">El Negocio Real</h3>
@@ -137,13 +151,137 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- LA INSTRUCTORA (AUTORIDAD) -->
+    <!-- EL CATÁLOGO (NUEVO) -->
+    <section class="py-24 px-6 bg-brand-cream/50 border-y border-brand-sage/10">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center mb-16">
+                <span class="text-brand-sage font-bold tracking-widest uppercase text-sm">Tu Portafolio Profesional</span>
+                <h2 class="font-serif text-3xl md:text-5xl text-brand-dark mt-4 mb-6">Mira todo lo que serás capaz de crear</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">
+                    No necesitas experiencia. Te guiaremos paso a paso para que logres estos acabados desde tu primera semana, usando ingredientes 100% naturales.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/Calendula-jabon-1.webp" alt="Jabón de caléndula e hidratante" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Primeros Jabones</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de avena (hidratante)</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Carbón activado (antiacné)</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Caléndula (cicatrizante)</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón zona íntima</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 2 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-de-avena-y-miel-2.webp" alt="Jabón natural de avena y miel" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Línea Natural</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de avena y miel</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de aloe vera</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de cacao</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 3 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-de-avena-desmaquillante-3.webp" alt="Jabón facial desmaquillante" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Línea Facial</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Desmaquillante piel grasa</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Desmaquillante todo tipo</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Antiarrugas para líneas de expresión</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 4 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-exfoliante-cafe-4.webp" alt="Jabón exfoliante de café" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Línea Exfoliante</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de café (Anticelulitis)</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabones de lufa natural</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 5 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-de-lavanda-5.webp" alt="Jabón terapéutico de lavanda" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Línea Terapéutica</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de lavanda (Relajante)</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de romero</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón de eucalipto</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 6 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-de-sandia-6.webp" alt="Jabón decorativo diseño sandía" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Línea Decorativa</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón diseño Sandía</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Jabón diseño Vaca</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Diseños para eventos</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 7 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-de-canela-7.webp" alt="Jabón esotérico de canela" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Línea Esotérica</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Canela (Abundancia)</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Ruda (Abre caminos)</li>
+                    </ul>
+                </div>
+
+                <!-- Tarjeta 8 -->
+                <div class="bg-white rounded-[2rem] p-6 shadow-md border border-gray-100 hover:shadow-xl transition-shadow group">
+                    <div class="w-32 h-32 mx-auto rounded-full overflow-hidden mb-6 border-4 border-brand-cream shadow-inner group-hover:scale-105 transition-transform">
+                        <img src="https://www.mentesmart.store/jabon-de-avena-sopificado-8.webp" alt="Jabón saponificado en frío" class="w-full h-full object-cover" loading="lazy" />
+                    </div>
+                    <h3 class="font-serif text-xl text-center text-brand-dark mb-4">Saponificación</h3>
+                    <ul class="space-y-2 text-sm text-gray-600">
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Técnica avanzada en frío</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Avena saponificado</li>
+                        <li class="flex gap-2"><span class="text-brand-sage">❯</span> Moringa saponificado</li>
+                    </ul>
+                </div>
+
+            </div>
+            
+            <div class="mt-12 text-center">
+                 <a href="#oferta" class="inline-block bg-brand-sage hover:bg-brand-dark text-white px-10 py-4 rounded-full text-lg font-bold shadow-xl transition-all transform hover:scale-105">
+                    QUIERO APRENDER A HACER ESTOS JABONES
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- LA INSTRUCTORA -->
     <section class="bg-brand-cream py-24 px-6 border-y border-brand-sage/20">
         <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-12 items-center">
             <div class="order-2 md:order-1 flex justify-center">
-                <!-- AQUI PONES LA FOTO DE ROCIO DIAZ -->
                 <div class="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-8 border-white shadow-xl bg-gray-200 flex items-center justify-center relative">
-                    <span class="text-gray-400 italic text-sm absolute"></span>
+                    <img src="https://www.mentesmart.store/experta1.webp" alt="Rocío Díaz, Experta en Jabonería" class="w-full h-full object-cover object-top" loading="lazy" />
                 </div>
             </div>
             <div class="order-1 md:order-2">
@@ -162,97 +300,145 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- TESTIMONIOS (PRUEBA SOCIAL) -->
-    <section class="bg-brand-rose/5 py-24 px-6">
-        <div class="max-w-5xl mx-auto">
-            <h2 class="font-serif text-4xl text-center mb-4 text-brand-dark">Historias de transformación real</h2>
-            <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Mujeres que ya dieron el paso y hoy disfrutan de la tranquilidad de tener su propio negocio artesanal.</p>
+    <!-- TESTIMONIOS (CARRUSEL) -->
+    <section class="bg-brand-rose/5 py-24 px-6 overflow-hidden">
+        <div class="max-w-6xl mx-auto relative">
+            <h2 class="font-serif text-4xl text-center mb-4 text-brand-dark">Resultados 100% Reales de Nuestras Alumnas</h2>
+            <p class="text-center text-gray-600 mb-12 max-w-2xl mx-auto">Nada de testimonios inventados. Esto es lo que comparten las mujeres reales dentro de nuestra Comunidad VIP de WhatsApp todos los días.</p>
             
-            <div class="grid md:grid-cols-3 gap-8">
-                <!-- Testimonio 1 -->
-                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-rose relative">
-                    <div class="absolute -top-6 right-6 bg-brand-cream w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-sm border border-brand-rose/20">💬</div>
-                    <div class="flex text-brand-gold mb-4 text-lg">★★★★★</div>
-                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Pensé que necesitaba mucho dinero para empezar. Con los $30 que invertí en los primeros materiales, hice mis primeros 15 jabones y los vendí todos a mis vecinas en un fin de semana."</p>
-                    <p class="font-bold text-brand-dark">— María G.</p>
+            <div class="relative group">
+                <button id="prevBtn" class="hidden md:flex absolute left-0 top-1/2 -translate-y-1/2 -translate-x-4 z-10 bg-white w-12 h-12 rounded-full shadow-xl items-center justify-center text-brand-sage hover:bg-brand-sage hover:text-white transition-all focus:outline-none" aria-label="Anterior">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5L8.25 12l7.5-7.5" /></svg>
+                </button>
+
+                <div id="testimonialSlider" class="flex overflow-x-auto snap-x snap-mandatory gap-6 pb-8 pt-4 px-4 hide-scrollbar scroll-smooth">
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test3.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test1-1.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test2.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test7.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test8.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test10.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
+                    <div class="snap-center shrink-0 w-[85vw] md:w-[350px] bg-white rounded-2xl p-2 shadow-md border border-gray-100 transform hover:-translate-y-1 transition-all"><img src="https://www.mentesmart.store/test11.webp" alt="Testimonio WhatsApp" class="w-full h-auto rounded-xl pointer-events-none" loading="lazy" /></div>
                 </div>
-                <!-- Testimonio 2 -->
-                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-sage relative">
-                    <div class="absolute -top-6 right-6 bg-brand-cream w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-sm border border-brand-sage/20">💬</div>
-                    <div class="flex text-brand-gold mb-4 text-lg">★★★★★</div>
-                    <p class="text-gray-600 italic mb-6 leading-relaxed">"Lo mejor no es el dinero extra que entra, sino que hago mis jabones en el comedor mientras mis hijos hacen la tarea a mi lado. Esa paz como madre no tiene precio."</p>
-                    <p class="font-bold text-brand-dark">— Laura P.</p>
-                </div>
-                <!-- Testimonio 3 -->
-                <div class="bg-white p-8 rounded-2xl shadow-md border-t-4 border-brand-gold relative">
-                    <div class="absolute -top-6 right-6 bg-brand-cream w-12 h-12 rounded-full flex items-center justify-center text-2xl shadow-sm border border-brand-gold/20">💬</div>
-                    <div class="flex text-brand-gold mb-4 text-lg">★★★★★</div>
-                    <p class="text-gray-600 italic mb-6 leading-relaxed">"El módulo de ventas me abrió los ojos. Yo no sabía nada de Instagram, y ahora ya tengo pedidos recurrentes para baby showers. El curso se pagó solo el primer mes."</p>
-                    <p class="font-bold text-brand-dark">— Ana R.</p>
-                </div>
+
+                <button id="nextBtn" class="hidden md:flex absolute right-0 top-1/2 -translate-y-1/2 translate-x-4 z-10 bg-white w-12 h-12 rounded-full shadow-xl items-center justify-center text-brand-sage hover:bg-brand-sage hover:text-white transition-all focus:outline-none" aria-label="Siguiente">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M8.25 4.5l7.5 7.5-7.5 7.5" /></svg>
+                </button>
             </div>
-            
-            <!-- CAPTURAS DE WHATSAPP / HOTMART -->
-            <div class="mt-12 text-center">
-                <p class="text-sm uppercase tracking-widest text-brand-sage font-bold mb-6">Resultados compartidos por nuestras alumnas</p>
-                <div class="flex flex-wrap justify-center gap-4">
-                    <!-- AQUI PONES LAS CAPTURAS DE WHATSAPP QUE DA EL PRODUCTOR -->
-                    <div class="w-64 h-40 bg-gray-200 rounded-xl flex items-center justify-center border border-gray-300 relative shadow-sm"><span class="text-gray-400 text-xs text-center px-2"></span></div>
-                    <div class="w-64 h-40 bg-gray-200 rounded-xl flex items-center justify-center border border-gray-300 relative shadow-sm"><span class="text-gray-400 text-xs text-center px-2"></span></div>
-                </div>
+
+            <div class="mt-8 text-center flex flex-col items-center">
+                <span class="md:hidden text-xs text-gray-400 flex items-center gap-2 mb-4 animate-pulse">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-4 h-4"><path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5h3c5.02 0 9-3.98 9-9s-3.98-9-9-9h-3m-2.25 7.5l-3 3m0 0l3 3m-3-3h18" /></svg>
+                    Desliza para ver más
+                </span>
             </div>
         </div>
     </section>
 
-    <!-- EL CURSO POR DENTRO Y CERTIFICADO -->
+    <!-- Script Carrusel -->
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            const slider = document.getElementById('testimonialSlider');
+            const prevBtn = document.getElementById('prevBtn');
+            const nextBtn = document.getElementById('nextBtn');
+            let autoPlayInterval;
+
+            if(slider && prevBtn && nextBtn) {
+                const scrollAmount = 374; 
+                const scrollNext = () => {
+                    if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 10) {
+                        slider.scrollTo({ left: 0, behavior: 'smooth' });
+                    } else {
+                        slider.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+                    }
+                };
+                const startAutoPlay = () => { autoPlayInterval = setInterval(scrollNext, 4000); };
+                const stopAutoPlay = () => { clearInterval(autoPlayInterval); };
+
+                prevBtn.addEventListener('click', () => {
+                    slider.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+                    stopAutoPlay(); startAutoPlay();
+                });
+                nextBtn.addEventListener('click', () => {
+                    scrollNext(); stopAutoPlay(); startAutoPlay();
+                });
+
+                slider.addEventListener('mouseenter', stopAutoPlay);
+                slider.addEventListener('mouseleave', startAutoPlay);
+                slider.addEventListener('touchstart', stopAutoPlay, {passive: true});
+                slider.addEventListener('touchend', startAutoPlay, {passive: true});
+
+                startAutoPlay();
+            }
+        });
+    </script>
+
+    <!-- EL CURSO POR DENTRO (VIDEO GIGANTE Y DETALLADO) -->
     <section class="py-24 px-6 bg-white text-brand-dark">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16 items-center">
-            <div class="order-2 md:order-1 space-y-8">
-                <div class="relative">
-                    <div class="absolute inset-0 bg-brand-sage/20 rounded-3xl rotate-3"></div>
-                    <div class="relative bg-brand-cream rounded-3xl shadow-xl overflow-hidden aspect-[4/3] flex flex-col items-center justify-center border-4 border-brand-dark px-10">
-                         <!-- AQUI PONES EL MOCKUP DEL CURSO -->
-                         <span class="text-brand-dark font-serif text-xl text-center font-bold absolute z-10 bg-white/80 p-4 rounded-xl"></span>
-                    </div>
-                </div>
-                <!-- CERTIFICADO -->
-                <div class="bg-brand-cream border border-brand-gold p-6 rounded-2xl flex items-center gap-6 shadow-md">
-                    <div class="w-1/3 bg-gray-200 rounded-lg aspect-[4/3] flex items-center justify-center relative">
-                        <!-- AQUI PONES LA IMAGEN DEL CERTIFICADO -->
-                        <span class="text-[10px] text-gray-500 text-center"></span>
-                    </div>
-                    <div class="w-2/3">
-                        <h4 class="font-bold text-brand-dark font-serif">Certificado Incluido</h4>
-                        <p class="text-sm text-gray-600 mt-1">Al finalizar, podrás descargar tu certificado personalizado avalando tus conocimientos como creadora artesanal.</p>
-                    </div>
-                </div>
+        <div class="max-w-5xl mx-auto">
+            
+            <div class="text-center mb-12">
+                <span class="text-brand-sage font-bold tracking-widest uppercase text-sm">Transparencia Total</span>
+                <h2 class="font-serif text-3xl md:text-5xl mt-4 mb-6 text-brand-dark">Conoce tu espacio de estudio por dentro</h2>
+                <p class="text-gray-600 max-w-2xl mx-auto text-lg">Mira la calidad de la plataforma, cómo están organizadas las clases y todo lo que recibirás al inscribirte hoy.</p>
             </div>
             
-            <div class="order-1 md:order-2">
-                <h2 class="font-serif text-4xl mb-8 leading-tight text-brand-dark">Todo lo que incluye tu inscripción hoy:</h2>
-                <ul class="space-y-4">
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-sage mt-1">✔</span>
-                        <p class="text-gray-700"><strong>Más de 9 Horas en Video (70+ clases)</strong> distribuidas en 15 módulos prácticos.</p>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-sage mt-1">✔</span>
-                        <p class="text-gray-700"><strong>Comunidad VIP por 6 meses:</strong> Apoyo real vía WhatsApp para resolver todas tus dudas directamente.</p>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-sage mt-1">✔</span>
-                        <p class="text-gray-700"><strong>Lista de Proveedores:</strong> Para que compres tus ingredientes al mejor precio desde el día 1.</p>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-sage mt-1">✔</span>
-                        <p class="text-gray-700"><strong>Módulo de Rentabilidad:</strong> Aprende a cobrar lo justo y asegurar tus ganancias.</p>
-                    </li>
-                    <li class="flex items-start gap-3">
-                        <span class="text-brand-sage mt-1">✔</span>
-                        <p class="text-gray-700"><strong>Acceso vitalicio:</strong> Mira las clases las veces que quieras, a tu propio ritmo.</p>
-                    </li>
-                </ul>
+            <!-- REPRODUCTOR DE VIDEO HTML5 (AHORA EN TAMAÑO COMPLETO) -->
+            <div class="relative bg-black rounded-3xl shadow-2xl overflow-hidden aspect-video border-4 border-brand-dark group z-10 max-w-4xl mx-auto mb-16">
+                <video 
+                    controls 
+                    controlslist="nodownload"
+                    class="w-full h-full object-cover"
+                    poster="https://www.mentesmart.store/mockup-curso.webp"
+                    preload="metadata">
+                    <!-- RUTA RELATIVA: Asegúrate de poner el archivo .mp4 en tu carpeta 'public' -->
+                    <source src="/curso-por-dentro.mp4" type="video/mp4" />
+                    Tu navegador no soporta el formato de video.
+                </video>
             </div>
+
+            <!-- CONTENIDO Y CERTIFICADO (DEBAJO DEL VIDEO) -->
+            <div class="grid md:grid-cols-2 gap-12 items-center bg-brand-cream/30 p-8 rounded-3xl border border-brand-sage/10">
+                <div class="order-2 md:order-1">
+                    <h3 class="font-serif text-2xl mb-6 leading-tight text-brand-dark">Todo lo que incluye tu inscripción hoy:</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sage mt-1">✔</span>
+                            <p class="text-gray-700"><strong>Más de 9 Horas en Video (70+ clases)</strong> distribuidas en 15 módulos prácticos.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sage mt-1">✔</span>
+                            <p class="text-gray-700"><strong>Comunidad VIP por 6 meses:</strong> Apoyo real vía WhatsApp para resolver todas tus dudas directamente.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sage mt-1">✔</span>
+                            <p class="text-gray-700"><strong>Lista de Proveedores:</strong> Para que compres tus ingredientes al mejor precio.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sage mt-1">✔</span>
+                            <p class="text-gray-700"><strong>Módulo de Rentabilidad:</strong> Aprende a cobrar lo justo y asegurar tus ganancias.</p>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <span class="text-brand-sage mt-1">✔</span>
+                            <p class="text-gray-700"><strong>Acceso vitalicio:</strong> Mira las clases las veces que quieras, a tu propio ritmo.</p>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- CERTIFICADO -->
+                <div class="order-1 md:order-2">
+                    <div class="bg-white border border-brand-gold p-6 rounded-2xl flex flex-col items-center gap-4 shadow-md relative z-10 text-center">
+                        <div class="w-full max-w-[250px] rounded-lg overflow-hidden relative border border-gray-200 bg-white">
+                            <img src="https://www.mentesmart.store/certificado1.webp" alt="Certificado de Finalización" class="w-full h-auto object-contain hover:scale-105 transition-transform" loading="lazy" />
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-brand-dark font-serif text-lg">Certificado Oficial Incluido</h4>
+                            <p class="text-sm text-gray-600 mt-2">Al finalizar el programa, podrás descargar e imprimir tu certificado avalando tus nuevos conocimientos profesionales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </section>
 
@@ -263,15 +449,13 @@ import '../styles/global.css';
             <p class="text-center text-gray-600 mb-16 max-w-2xl mx-auto">Al inscribirte hoy, desbloqueas 12 BONOS DE REGALO para expandir tu catálogo y disparar tus ventas.</p>
             
             <div class="grid md:grid-cols-2 gap-6">
-                <!-- Bono 1 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-sage flex items-start gap-4">
                     <span class="text-3xl">🎁</span>
                     <div>
                         <h4 class="font-bold text-brand-dark">Clases: Jabones para Eventos y Bodas</h4>
-                        <p class="text-sm text-gray-600 mt-1">Aprende a hacer jabones tipo Cupcake y recuerdos para baby showers. (Ideal para pedidos por mayor).</p>
+                        <p class="text-sm text-gray-600 mt-1">Aprende a hacer jabones tipo Cupcake y recuerdos para baby showers.</p>
                     </div>
                 </div>
-                <!-- Bono 2 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-sage flex items-start gap-4">
                     <span class="text-3xl">🎁</span>
                     <div>
@@ -279,56 +463,78 @@ import '../styles/global.css';
                         <p class="text-sm text-gray-600 mt-1">Un archivo automatizado para calcular exactamente a cuánto vender sin perder dinero.</p>
                     </div>
                 </div>
-                <!-- Bono 3 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-gold flex items-start gap-4">
                     <span class="text-3xl">🎁</span>
                     <div>
                         <h4 class="font-bold text-brand-dark">Recetario: Champús y Acondicionadores</h4>
-                        <p class="text-sm text-gray-600 mt-1">Expande tu marca creando cosmética sólida capilar, una tendencia muy rentable hoy en día.</p>
+                        <p class="text-sm text-gray-600 mt-1">Expande tu marca creando cosmética sólida capilar.</p>
                     </div>
                 </div>
-                <!-- Bono 4 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-gold flex items-start gap-4">
                     <span class="text-3xl">🎁</span>
                     <div>
                         <h4 class="font-bold text-brand-dark">Recetario: Bálsamos y Desodorantes</h4>
-                        <p class="text-sm text-gray-600 mt-1">Guías paso a paso para crear protectores labiales y desodorantes 100% naturales.</p>
+                        <p class="text-sm text-gray-600 mt-1">Guías paso a paso para crear protectores labiales y desodorantes naturales.</p>
                     </div>
                 </div>
-                <!-- Bono 5 -->
                 <div class="bg-white p-6 rounded-2xl shadow-sm border-l-4 border-brand-rose flex items-start gap-4 md:col-span-2">
                     <span class="text-3xl">🎁</span>
                     <div>
                         <h4 class="font-bold text-brand-dark">+ 7 Bonos Adicionales de Lujo</h4>
-                        <p class="text-sm text-gray-600 mt-1">Incluye clases de Mantequilla Corporal, Jabones en forma de Gema, Jabón líquido para manos, Guía de macerados naturales, sinergia de plantas y recetarios completos por línea.</p>
+                        <p class="text-sm text-gray-600 mt-1">Incluye clases de Mantequilla Corporal, Jabones en forma de Gema, Jabón líquido para manos, Guía de macerados naturales y recetarios completos por línea.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- OFERTA FINAL -->
+    <!-- OFERTA FINAL (CON ESCASEZ INTELIGENTE LOCALSTORAGE) -->
     <section id="oferta" class="py-24 px-6 bg-brand-cream relative">
         <div class="max-w-3xl mx-auto">
-            <div class="bg-white rounded-[2rem] shadow-2xl overflow-hidden border border-brand-gold/30">
+            
+            <div id="timerContainer" class="bg-red-50 border border-red-200 p-4 md:p-6 rounded-t-[2rem] text-center shadow-inner relative overflow-hidden transition-colors duration-500">
+                <div class="absolute top-0 left-0 w-full h-1 bg-red-500/20"></div>
+                <h3 id="timerTitle" class="font-bold text-red-700 text-lg md:text-xl flex items-center justify-center gap-2">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" class="w-6 h-6 animate-spin-slow"><path stroke-linecap="round" stroke-linejoin="round" d="M12 6v6h4.5m4.5 0a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>
+                    Tu cupón del 70% expira en: <span id="countdown" class="font-mono text-2xl ml-1 tracking-wider text-red-600">15:00</span>
+                </h3>
+                <p id="timerSubtitle" class="text-sm text-red-600 mt-2 font-medium">Hemos reservado tu descuento promocional temporalmente.</p>
+            </div>
+
+            <div class="bg-white rounded-b-[2rem] shadow-2xl overflow-hidden border-x border-b border-brand-gold/30">
                 <div class="bg-brand-dark py-6 text-center px-6">
                     <h2 class="font-serif text-2xl md:text-3xl text-white">Comienza tu emprendimiento hoy</h2>
                 </div>
                 
                 <div class="p-8 md:p-12 text-center">
-                    <p class="text-gray-600 mb-6 text-lg">Acceso de por vida al programa completo + Soporte VIP + 12 Bonos Exclusivos.</p>
+                    
+                    <div class="bg-yellow-50 border border-yellow-200 p-4 rounded-xl mb-8 text-sm text-left text-yellow-800">
+                        <strong>Nota de Rocío:</strong> <em>"Para poder dar soporte de calidad por WhatsApp, solo abrimos 50 plazas mensuales con este descuento. Una vez llenas, el precio vuelve a la normalidad."</em>
+                    </div>
+
+                    <div class="mb-8">
+                        <div class="flex justify-between text-sm font-bold text-brand-rose mb-2">
+                            <span>Cupos promocionales disponibles</span>
+                            <span>87% Reclamados</span>
+                        </div>
+                        <div class="w-full bg-gray-100 rounded-full h-3 overflow-hidden border border-gray-200">
+                            <div class="bg-brand-rose h-full rounded-full animate-progress relative overflow-hidden">
+                                <div class="absolute top-0 left-0 w-full h-full bg-white/20 animate-pulse"></div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-gray-400 mt-2 text-right">Solo quedan 7 plazas con soporte VIP.</p>
+                    </div>
                     
                     <div class="mb-8">
                         <span class="text-gray-400 line-through text-2xl font-light">$100.00 USD</span>
                         <div class="text-6xl md:text-7xl font-bold text-brand-sage mt-2">$30.00 <span class="text-2xl">USD</span></div>
-                        <p class="text-brand-rose font-bold mt-4 animate-pulse text-sm tracking-widest uppercase">CUPÓN DE 70% APLICADO AUTOMÁTICAMENTE</p>
+                        <p class="text-brand-rose font-bold mt-4 uppercase text-sm tracking-widest bg-brand-rose/10 inline-block px-4 py-1 rounded-full border border-brand-rose/20">✓ CUPÓN DE 70% APLICADO</p>
                     </div>
 
-                    <a href="https://go.hotmart.com/V104688154N?ap=9d09" class="block w-full bg-brand-sage hover:bg-brand-dark text-white py-5 rounded-xl text-xl font-bold shadow-xl transition-all mb-6">
+                    <a href="https://go.hotmart.com/V104688154N?ap=9d09" target="_blank" rel="noopener noreferrer" class="block w-full bg-brand-sage hover:bg-brand-dark text-white py-5 rounded-xl text-xl font-bold shadow-2xl transition-all mb-6 transform hover:scale-[1.02] active:scale-[0.98]">
                         INSCRIBIRME AHORA Y RECIBIR LOS BONOS
                     </a>
 
-                    <!-- Garantía Real -->
                     <div class="bg-gray-50 p-6 rounded-xl text-left flex gap-4 items-start border border-gray-100">
                         <span class="text-3xl">🛡️</span>
                         <div>
@@ -341,13 +547,61 @@ import '../styles/global.css';
         </div>
     </section>
 
+    <!-- SCRIPT DEL TEMPORIZADOR INTELIGENTE (LOCALSTORAGE) -->
+    <script is:inline>
+        document.addEventListener('DOMContentLoaded', () => {
+            const DURATION_MS = 15 * 60 * 1000; // 15 minutos en milisegundos
+            const display = document.getElementById('countdown');
+            const container = document.getElementById('timerContainer');
+            const title = document.getElementById('timerTitle');
+            const subtitle = document.getElementById('timerSubtitle');
+            
+            let endTime = localStorage.getItem('alquimia_timer_end');
+            const now = new Date().getTime();
+
+            if (!endTime || (now - endTime) > (24 * 60 * 60 * 1000)) {
+                endTime = now + DURATION_MS;
+                localStorage.setItem('alquimia_timer_end', endTime);
+            }
+
+            function updateTimer() {
+                const currentTime = new Date().getTime();
+                const remainingMs = endTime - currentTime;
+
+                if (remainingMs > 0) {
+                    const minutes = Math.floor(remainingMs / (1000 * 60));
+                    const seconds = Math.floor((remainingMs % (1000 * 60)) / 1000);
+                    display.textContent = `${minutes < 10 ? '0' : ''}${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+                } else {
+                    display.textContent = "00:00";
+                    display.classList.add('text-red-600', 'animate-pulse');
+                    
+                    container.classList.remove('bg-green-50', 'border-green-200');
+                    container.classList.add('bg-red-50', 'border-red-200');
+                    
+                    title.classList.remove('text-green-700');
+                    title.classList.add('text-red-700');
+                    title.innerHTML = '⚠️ Tiempo de reserva agotado <span id="countdown" class="font-mono text-2xl ml-1 tracking-wider text-red-600 animate-pulse">00:00</span>';
+                    
+                    subtitle.classList.remove('text-green-600');
+                    subtitle.classList.add('text-red-600');
+                    subtitle.textContent = "Tu cupón podría ser reasignado. Haz clic en 'Inscribirme Ahora' para verificar si el descuento sigue disponible en el checkout.";
+                    
+                    clearInterval(timerInterval);
+                }
+            }
+            
+            updateTimer(); // Llamada inicial
+            const timerInterval = setInterval(updateTimer, 1000);
+        });
+    </script>
+
     <!-- PREGUNTAS FRECUENTES (FAQ) -->
     <section class="py-20 px-6 bg-white border-t border-gray-100">
         <div class="max-w-3xl mx-auto">
             <h2 class="font-serif text-3xl md:text-4xl text-center mb-12 text-brand-dark">Preguntas Frecuentes</h2>
             
             <div class="space-y-4">
-                <!-- FAQ 1 -->
                 <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
                         ¿El curso es presencial o en línea?
@@ -360,7 +614,6 @@ import '../styles/global.css';
                     </p>
                 </details>
 
-                <!-- FAQ 2 -->
                 <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
                         ¿Tendré soporte para resolver mis dudas?
@@ -373,7 +626,6 @@ import '../styles/global.css';
                     </p>
                 </details>
 
-                <!-- FAQ 3 -->
                 <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
                         ¿Cuáles son las formas de pago?
@@ -386,7 +638,6 @@ import '../styles/global.css';
                     </p>
                 </details>
 
-                 <!-- FAQ 4 -->
                  <details class="group bg-brand-cream p-6 rounded-2xl border border-brand-sage/20 [&_summary::-webkit-details-marker]:hidden">
                     <summary class="flex items-center justify-between cursor-pointer font-bold text-brand-dark text-lg">
                         ¿Qué necesito para empezar?
@@ -402,13 +653,43 @@ import '../styles/global.css';
         </div>
     </section>
 
-    <!-- FOOTER -->
-    <footer class="py-12 bg-white text-center border-t border-brand-rose/10">
-        <p class="font-serif text-2xl italic text-brand-rose mb-2">Alquimia Natural</p>
-        <p class="text-[10px] text-gray-400 max-w-3xl mx-auto leading-relaxed px-6 mt-6">
-            AVISO LEGAL: Este producto no garantiza la obtención de resultados económicos. Las referencias a ingresos son testimonios de alumnas reales que han aplicado lo aprendido con esfuerzo y dedicación. Cada emprendimiento requiere trabajo. Este sitio no es parte del sitio web de Facebook o Facebook Inc. Este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
-        </p>
+    <!-- FOOTER LEGAL Y ENLACES -->
+    <footer class="py-12 bg-white text-center border-t border-brand-rose/20 pb-24 md:pb-12">
+        <div class="max-w-4xl mx-auto px-6">
+            <p class="font-serif text-2xl italic text-brand-rose mb-6">Alquimia Natural</p>
+            
+            <div class="flex flex-wrap justify-center gap-6 mb-8 text-sm text-gray-500">
+                <a href="/terminos" class="hover:text-brand-sage transition-colors">Política de Privacidad</a>
+                <a href="/terminos" class="hover:text-brand-sage transition-colors">Términos y Condiciones</a>
+                <a href="https://wa.me/59176305194?text=Hola,%20vengo%20de%20la%20página%20web%20y%20tengo%20una%20consulta" target="_blank" rel="noopener noreferrer" class="hover:text-brand-sage transition-colors">Contacto</a>
+            </div>
+
+            <p class="text-[11px] text-gray-400 leading-relaxed mb-4">
+                AVISO LEGAL: Este producto no garantiza la obtención de resultados económicos. Las referencias a ingresos son testimonios de alumnas reales que han aplicado lo aprendido con esfuerzo y dedicación. Cada emprendimiento requiere trabajo.
+            </p>
+            <p class="text-[11px] text-gray-400 leading-relaxed mb-6">
+                Este sitio no es parte del sitio web de Facebook o Facebook Inc. Este sitio NO está respaldado por Facebook de ninguna manera. FACEBOOK es una marca registrada de FACEBOOK, Inc.
+            </p>
+            
+            <p class="text-xs font-semibold text-gray-500">
+                © {new Date().getFullYear()} Alquimia Natural. Todos los derechos reservados.
+            </p>
+        </div>
     </footer>
+
+    <!-- BOTÓN FLOTANTE DE WHATSAPP -->
+    <a href="https://wa.me/59176305194?text=Hola,%20tengo%20una%20duda%20sobre%20el%20curso%20de%20Jabones%20Artesanales" 
+       target="_blank" 
+       rel="noopener noreferrer"
+       class="fixed bottom-6 right-6 bg-[#25D366] text-white p-4 rounded-full shadow-2xl hover:scale-110 transition-transform z-50 flex items-center justify-center group"
+       aria-label="Contactar por WhatsApp">
+        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-whatsapp" viewBox="0 0 16 16">
+            <path d="M13.601 2.326A7.854 7.854 0 0 0 7.994 0C3.627 0 .068 3.558.064 7.926c0 1.399.366 2.76 1.057 3.965L0 16l4.204-1.102a7.933 7.933 0 0 0 3.79.965h.004c4.368 0 7.926-3.558 7.93-7.93A7.898 7.898 0 0 0 13.6 2.326zM7.994 14.521a6.573 6.573 0 0 1-3.356-.92l-.24-.144-2.494.654.666-2.433-.156-.251a6.56 6.56 0 0 1-1.007-3.505c0-3.626 2.957-6.584 6.591-6.584a6.56 6.56 0 0 1 4.66 1.931 6.557 6.557 0 0 1 1.928 4.66c-.004 3.639-2.961 6.592-6.592 6.592zm3.615-4.934c-.197-.099-1.17-.578-1.353-.646-.182-.065-.315-.099-.445.099-.133.197-.513.646-.627.775-.114.133-.232.148-.43.05-.197-.1-.836-.308-1.592-.985-.59-.525-.985-1.175-1.103-1.372-.114-.198-.011-.304.088-.403.087-.088.197-.232.296-.346.1-.114.133-.198.198-.33.065-.134.034-.248-.015-.347-.05-.099-.445-1.076-.612-1.47-.16-.389-.323-.335-.445-.34-.114-.007-.247-.007-.38-.007a.729.729 0 0 0-.529.247c-.182.198-.691.677-.691 1.654 0 .977.71 1.916.81 2.049.098.133 1.394 2.132 3.383 2.992.47.205.84.326 1.129.418.475.152.904.129 1.246.08.38-.058 1.171-.48 1.338-.943.164-.464.164-.86.114-.943-.049-.084-.182-.133-.38-.232z"/>
+        </svg>
+        <span class="absolute right-16 bg-white text-brand-dark text-sm px-4 py-2 rounded-lg shadow-lg opacity-0 group-hover:opacity-100 transition-opacity whitespace-nowrap border border-gray-100 font-medium">
+            ¿Tienes dudas? ¡Escríbeme!
+        </span>
+    </a>
 
 </body>
 </html>
