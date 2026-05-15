@@ -1,0 +1,293 @@
+---
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV Carlos Gutierrez Caballero</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Iconos SVG -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Librería html2canvas para descargar como imagen -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+        }
+        
+        /* Utilidad para evitar cortes feos de texto entre páginas en el PDF */
+        .avoid-break {
+            page-break-inside: avoid !important;
+            break-inside: avoid !important;
+        }
+
+        /* Reglas estrictas para forzar el diseño de Escritorio en la Imagen y alta calidad */
+        .export-mode { 
+            width: 1000px !important; /* Ancho fijo óptimo de escritorio */
+            max-width: 1000px !important; 
+            margin: 0 !important;
+            border-radius: 0 !important;
+            box-shadow: none !important;
+        }
+        .export-mode .layout-wrapper { flex-direction: row !important; display: flex !important; }
+        .export-mode .sidebar { width: 320px !important; flex-shrink: 0 !important; border-right: 1px solid #f1f5f9 !important; }
+        .export-mode .main-content { width: 680px !important; flex-shrink: 0 !important; }
+        .export-mode .header-content { flex-direction: row !important; align-items: flex-start !important; text-align: left !important; }
+
+        @media print {
+            body { background-color: white; }
+            .print-container { box-shadow: none !important; margin: 0 !important; max-width: 100% !important; }
+            .no-print { display: none !important; }
+        }
+    </style>
+</head>
+<body class="text-slate-800 antialiased py-4 print:py-0">
+
+    <div id="cv-container" class="print-container max-w-5xl mx-auto bg-white shadow-xl sm:rounded-xl overflow-hidden print:rounded-none">
+        
+        <!-- Header -->
+        <header class="header-content bg-slate-900 text-white pt-8 pb-6 px-6 sm:px-10 flex flex-col sm:flex-row items-center sm:items-start justify-between">
+            <div class="text-center sm:text-left">
+                <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-1.5">Carlos Alfredo Gutierrez <span class="text-blue-400">Caballero</span></h1>
+                <h2 class="text-lg sm:text-xl text-slate-300 font-medium tracking-wide">Arquitecto & Ingeniero de Software Senior</h2>
+            </div>
+        </header>
+
+        <!-- Main Content Layout -->
+        <div class="layout-wrapper flex flex-col md:flex-row">
+            
+            <!-- Sidebar (Contact, Skills, Education) -->
+            <aside class="sidebar w-full md:w-1/3 bg-slate-50 p-6 sm:px-8 md:px-6 border-r border-slate-100">
+                
+                <!-- Contact Info -->
+                <section class="mb-6 avoid-break">
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider mb-3 border-b-2 border-blue-500 pb-1.5 inline-block">Contacto</h3>
+                    <ul class="space-y-3 text-[13px] text-slate-600">
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="phone" class="w-4 h-4 text-blue-600"></i>
+                            <span>+591 75086422</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="mail" class="w-4 h-4 text-blue-600"></i>
+                            <a href="mailto:carlos.a.gutierrezcaballero@gmail.com" class="hover:text-blue-600 transition-colors break-all">carlos.a.gutierrezcaballero<br>@gmail.com</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="linkedin" class="w-4 h-4 text-blue-600"></i>
+                            <a href="https://www.linkedin.com/in/carlos-gutierrez-caballero-1934a2174/" target="_blank" class="hover:text-blue-600 transition-colors break-all">linkedin.com/in/carlos-gutierrez</a>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i data-lucide="map-pin" class="w-4 h-4 text-blue-600"></i>
+                            <span>Santa Cruz, Bolivia</span>
+                        </li>
+                    </ul>
+                </section>
+
+                <!-- Core Skills -->
+                <section class="mb-6 avoid-break">
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider mb-3 border-b-2 border-blue-500 pb-1.5 inline-block">Habilidades Core</h3>
+                    
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-2">Arquitectura & Backend</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Python</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Flask</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">C# (.Net)</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">NodeJS</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Microservicios</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Kafka</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">API Kong</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-2">IA & Automatización</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium leading-none">Agentes LLM</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium leading-none">n8n</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium leading-none">Prompt Eng.</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium leading-none">IBM Watson</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-2">DevOps & Cloud</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Docker</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Kubernetes</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Jenkins CI/CD</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-2">Core Bancario & BD</h4>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Topaz</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">SQL Server</span>
+                            <span class="inline-flex items-center justify-center px-2.5 py-1 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium leading-none">Oracle / PostgreSQL</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="mb-6 avoid-break">
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider mb-3 border-b-2 border-blue-500 pb-1.5 inline-block">Formación</h3>
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-1.5">Arquitectura & Backend</h4>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Python</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Flask</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">C# (.Net)</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">NodeJS</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Microservicios</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Kafka</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">API Kong</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-1.5">IA & Automatización</h4>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2 py-0.5 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium">Agentes LLM</span>
+                            <span class="px-2 py-0.5 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium">n8n</span>
+                            <span class="px-2 py-0.5 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium">Prompt Eng.</span>
+                            <span class="px-2 py-0.5 bg-blue-100 text-blue-800 rounded-md text-[11px] font-medium">IBM Watson</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-1.5">DevOps & Cloud</h4>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Docker</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Kubernetes</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Jenkins CI/CD</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">AWS</span>
+                        </div>
+                    </div>
+
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-semibold text-slate-700 mb-1.5">Core Bancario & BD</h4>
+                        <div class="flex flex-wrap gap-1.5">
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Topaz</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">SQL Server</span>
+                            <span class="px-2 py-0.5 bg-slate-200 text-slate-700 rounded-md text-[11px] font-medium">Oracle / PostgreSQL</span>
+                        </div>
+                    </div>
+                </section>
+
+                <!-- Education -->
+                <section class="mb-6 avoid-break">
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider mb-3 border-b-2 border-blue-500 pb-0.5 inline-block">Formación</h3>
+                    <div class="mb-3">
+                        <h4 class="text-[13px] font-bold text-slate-800">Lic. en Ingeniería de Sistemas</h4>
+                        <p class="text-[11px] text-slate-500 mb-0.5">Universidad Autónoma Gabriel Rene Moreno</p>
+                    </div>
+                    <div>
+                        <h4 class="text-[13px] font-bold text-slate-800">Postgrado Calidad de Software</h4>
+                        <p class="text-[11px] text-slate-500">Universidad Autónoma Gabriel Rene Moreno</p>
+                    </div>
+                </section>
+
+                <!-- Languages -->
+                <section class="avoid-break">
+                    <h3 class="text-base font-bold text-slate-900 uppercase tracking-wider mb-3 border-b-2 border-blue-500 pb-1.5 inline-block">Idiomas</h3>
+                    <ul class="space-y-1.5 text-[13px] text-slate-700">
+                        <li class="flex justify-between"><span>Español</span> <span class="text-slate-500">Nativo</span></li>
+                        <li class="flex justify-between"><span>Inglés</span> <span class="text-slate-500">Intermedio</span></li>
+                    </ul>
+                </section>
+
+            </aside>
+
+            <!-- Main Content (Profile & Experience) -->
+            <main class="main-content w-full md:w-2/3 p-6 sm:px-8 md:px-8 bg-white">
+                
+                <!-- Profile Summary -->
+                <section class="mb-6 avoid-break">
+                    <h3 class="text-lg font-bold text-slate-900 mb-2 flex items-center gap-2">
+                        <i data-lucide="user" class="w-5 h-5 text-blue-600"></i>
+                        Perfil Profesional
+                    </h3>
+                    <p class="text-slate-600 leading-relaxed text-[13px] text-justify">
+                        Ingeniero de Software altamente competente con más de <span class="font-semibold text-slate-800">9 años de experiencia</span> en arquitectura, diseño y desarrollo de software. Especializado en el sector bancario (Pasarelas de pago, APIs móviles transaccionales) y en la creación de soluciones innovadoras impulsadas por <span class="font-semibold text-slate-800">Inteligencia Artificial</span>. Mi enfoque se centra en diseñar arquitecturas escalables, eficientes y seguras que resuelvan necesidades empresariales complejas, promoviendo la automatización avanzada y el uso de agentes LLM para optimizar procesos y negocios.
+                    </p>
+                </section>
+
+                <!-- Work Experience -->
+                <section>
+                    <h3 class="text-lg font-bold text-slate-900 mb-4 flex items-center gap-2 avoid-break">
+                        <i data-lucide="briefcase" class="w-5 h-5 text-blue-600"></i>
+                        Experiencia Destacada
+                    </h3>
+
+                    <!-- Experience 1 -->
+                    <div class="mb-5 relative pl-5 border-l-2 border-blue-200 avoid-break">
+                        <div class="absolute w-2.5 h-2.5 bg-blue-600 rounded-full -left-[6px] top-1.5 ring-4 ring-white"></div>
+                        <h4 class="text-base font-bold text-slate-800">Consultor Analista de Desarrollo de Software</h4>
+                        <div class="text-[12px] font-medium text-blue-600 mb-1.5">Banco de la Nación Argentina <span class="text-slate-400 mx-1.5">|</span> 2023 - Actualidad</div>
+                        <ul class="list-disc list-outside ml-3.5 text-[13px] text-slate-600 space-y-1">
+                            <li><span class="font-semibold text-slate-800">Arquitectura de Integración Móvil:</span> Liderazgo en el diseño e implementación de las APIs que integran el frontend de la aplicación móvil con <span class="font-semibold text-slate-700">todos los procesos transaccionales críticos</span> del banco. Responsable del diseño de arquitectura, creación de flujos y diagramas, asegurando la robustez en operaciones como <span class="font-semibold text-slate-700">transferencias y pagos por QR</span>, además de la gestión completa de beneficiarios y extractos.</li>
+                            <li><span class="font-semibold text-slate-800">Análisis</span> de requerimientos, <span class="font-semibold text-slate-800">Diseño</span> e <span class="font-semibold text-slate-800">Implementación</span> de funcionalidades y procesos contables complejos sobre el Core Bancario.</li>
+                            <li><span class="font-semibold text-slate-800">Arquitectura de Notificaciones:</span> Desarrollo de sistema asíncrono con colas de mensajería para transferencias y movimientos de tarjetas, utilizando un worker en <span class="font-semibold text-slate-700">Python</span> para la extracción y envío de notificaciones Push móviles.</li>
+                            <li><span class="font-semibold text-slate-800">Agente IA de Desarrollo (Core Bancario):</span> Creador de un motor de IA que traduce requerimientos de negocio en código y lógica de base de datos. Al estandarizar la complejidad del framework, <span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-md font-medium box-decoration-clone">automatiza entre el 60% y 70% del ciclo de desarrollo inicial</span>, eliminando errores manuales.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 2 -->
+                    <div class="mb-5 relative pl-5 border-l-2 border-blue-200 avoid-break">
+                        <div class="absolute w-2.5 h-2.5 bg-blue-600 rounded-full -left-[6px] top-1.5 ring-4 ring-white"></div>
+                        <h4 class="text-base font-bold text-slate-800">Arquitecto de Soluciones IA & Automatización</h4>
+                        <div class="text-[12px] font-medium text-blue-600 mb-1.5">Proyectos Independientes <span class="text-slate-400 mx-1.5">|</span> 2023 - Actualidad</div>
+                        <ul class="list-disc list-outside ml-3.5 text-[13px] text-slate-600 space-y-1">
+                            <li><span class="font-semibold text-slate-800">E-commerce, PWA de Gestión & Agente de Ventas IA:</span> Plataforma que sincroniza un E-commerce (React) con un POS (Node.js/PostgreSQL) y una <span class="font-semibold text-slate-700">App PWA</span> dedicada al control de inventarios. Destaca por un Agente de IA (<span class="font-semibold text-slate-700">n8n + Groq</span>) que interactúa con clientes, resuelve dudas y aplica persuasión. Al obtener la intención de compra, el sistema notifica vía Telegram, <span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-md font-medium box-decoration-clone">automatizando el 90% del embudo de ventas.</span></li>
+                            <li><span class="font-semibold text-slate-800">Affiliate Intelligence:</span> Herramienta analítica construida con <span class="font-semibold text-slate-700">Flask</span> (backend/frontend desacoplada). Integra Google Autocomplete y <span class="font-semibold text-slate-700">RapidAPI</span> (Web Scraping de Meta) para evaluar demanda y competencia en LATAM. Adicionalmente, utiliza la <span class="font-semibold text-slate-700">API de YouTube</span> y <span class="font-semibold text-slate-700">Gemini AI</span> para analizar comentarios y descubrir los "puntos de dolor" del consumidor.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 3 -->
+                    <div class="mb-5 relative pl-5 border-l-2 border-blue-200 avoid-break">
+                        <div class="absolute w-2.5 h-2.5 bg-blue-600 rounded-full -left-[6px] top-1.5 ring-4 ring-white"></div>
+                        <h4 class="text-base font-bold text-slate-800">Arquitecto de Software</h4>
+                        <div class="text-[12px] font-medium text-blue-600 mb-1.5">Banco Ganadero S.A. <span class="text-slate-400 mx-1.5">|</span> 2020 - 2023</div>
+                        <ul class="list-disc list-outside ml-3.5 text-[13px] text-slate-600 space-y-1">
+                            <li>Diseño de arquitectura orientada a eventos con <span class="font-semibold text-slate-700">Apache Kafka</span> y <span class="font-semibold text-slate-700">Kubernetes</span> para procesar devoluciones en línea. <span class="bg-emerald-100 text-emerald-800 px-1.5 py-0.5 rounded-md font-medium box-decoration-clone">Optimización de respuesta de 2 días a 25 segundos.</span></li>
+                            <li>Creación de microservicios biométricos con <span class="font-semibold text-slate-700">AWS Rekognition</span> y Lambda conectados al SEGIP para aperturas de cuentas móviles.</li>
+                            <li>Diseño de arquitectura con Kony Quantum y .Net Core para la venta móvil de seguros.</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 4 -->
+                    <div class="mb-5 relative pl-5 border-l-2 border-blue-200 avoid-break">
+                        <div class="absolute w-2.5 h-2.5 bg-blue-600 rounded-full -left-[6px] top-1.5 ring-4 ring-white"></div>
+                        <h4 class="text-base font-bold text-slate-800">Desarrollador de Software</h4>
+                        <div class="text-[12px] font-medium text-blue-600 mb-1.5">Grupo Sion <span class="text-slate-400 mx-1.5">|</span> 2019 - 2020</div>
+                        <ul class="list-disc list-outside ml-3.5 text-[13px] text-slate-600 space-y-1">
+                            <li>Desarrollo de módulos ERP propietario usando .Net Core y Python.</li>
+                            <li>Liderazgo en automatización de despliegue continuo con <span class="font-semibold text-slate-700">Jenkins, Gitlab y Docker</span> en Ubuntu.</li>
+                            <li>Creación de billetera móvil corporativa (NodeJS, ReactJS, React Native).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Experience 5 -->
+                    <div class="relative pl-5 border-l-2 border-transparent avoid-break">
+                        <div class="absolute w-2.5 h-2.5 bg-slate-300 rounded-full -left-[6px] top-1.5 ring-4 ring-white"></div>
+                        <h4 class="text-base font-bold text-slate-800">Desarrollador de Software</h4>
+                        <div class="text-[12px] font-medium text-blue-600 mb-1.5">Cloudbit <span class="text-slate-400 mx-1.5">|</span> 2016 - 2019</div>
+                        <ul class="list-disc list-outside ml-3.5 text-[13px] text-slate-600 space-y-1">
+                            <li>Liderazgo en E-commerce con pagos integrados (NodeJS y Python).</li>
+                            <li>Integración de chatbots certificados con <span class="font-semibold text-slate-700">IBM Watson</span> y análisis de sentimientos en redes.</li>
+                        </ul>
+                    </div>
+
+                </section>
+            </main>
+        </div>
+
+
+    <!-- Script de Inicialización y Generación de Imagen -->
+</body>
+</html>

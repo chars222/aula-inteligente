@@ -1,0 +1,225 @@
+---
+import '../styles/global.css';
+---
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carlos Gutierrez | Arquitecto de Soluciones IA</title>
+    <!-- SEO Básico -->
+    <meta name="description" content="Portafolio de Carlos Gutierrez, Arquitecto de Software Senior especializado en Inteligencia Artificial, automatización y Core Bancario.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Librería html2pdf -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <style>
+        body { font-family: 'Inter', sans-serif; }
+        /* Suave animación de entrada */
+        .fade-in-up { animation: fadeInUp 0.8s ease-out forwards; opacity: 0; transform: translateY(20px); }
+        @keyframes fadeInUp { to { opacity: 1; transform: translateY(0); } }
+        .delay-100 { animation-delay: 100ms; }
+        .delay-200 { animation-delay: 200ms; }
+        .delay-300 { animation-delay: 300ms; }
+
+        /* Clases para la exportación a PDF */
+        .pdf-mode {
+            width: 800px !important;
+            max-width: 800px !important;
+            margin: 0 auto !important;
+            padding: 40px !important;
+            background-color: #f8fafc !important;
+        }
+        .pdf-mode #download-section {
+            display: none !important;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased selection:bg-blue-200 selection:text-blue-900 min-h-screen py-12 px-4 sm:px-6 lg:px-8">
+
+    <div id="profile-container" class="max-w-3xl mx-auto space-y-8">
+
+        <!-- Header / Presentación -->
+        <header class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-slate-100 fade-in-up relative overflow-hidden">
+            <!-- Decoración de fondo -->
+            <div class="absolute top-0 right-0 -mr-16 -mt-16 w-48 h-48 bg-blue-50 rounded-full opacity-50 pointer-events-none"></div>
+            
+            <div class="flex flex-col sm:flex-row items-center sm:items-start gap-6 relative z-10">
+                <!-- Avatar o Iniciales -->
+                <div class="w-24 h-24 bg-gradient-to-br from-blue-600 to-slate-800 rounded-2xl flex items-center justify-center text-white text-3xl font-bold shadow-lg flex-shrink-0">
+                    CG
+                </div>
+                
+                <div class="text-center sm:text-left">
+                    <h1 class="text-3xl sm:text-4xl font-bold tracking-tight text-slate-900 mb-2">Carlos Gutierrez</h1>
+                    <h2 class="text-lg font-medium text-blue-600 mb-4">Arquitecto de Soluciones IA & Backend Senior</h2>
+                    
+                    <div class="flex flex-wrap justify-center sm:justify-start gap-3 text-sm text-slate-600">
+                        <a href="mailto:carlos.a.gutierrezcaballero@gmail.com" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors bg-slate-100 px-3 py-1.5 rounded-full">
+                            <i data-lucide="mail" class="w-4 h-4"></i> Email Directo
+                        </a>
+                        <a href="https://linkedin.com/in/carlos-gutierrez-caballero-1934a2174" target="_blank" class="flex items-center gap-1.5 hover:text-blue-600 transition-colors bg-slate-100 px-3 py-1.5 rounded-full">
+                            <i data-lucide="linkedin" class="w-4 h-4"></i> LinkedIn
+                        </a>
+                        <span class="flex items-center gap-1.5 bg-slate-100 px-3 py-1.5 rounded-full">
+                            <i data-lucide="map-pin" class="w-4 h-4"></i> Santa Cruz, Bolivia
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Sobre Mí -->
+        <section class="bg-white rounded-3xl p-8 sm:p-10 shadow-sm border border-slate-100 fade-in-up delay-100">
+            <h3 class="text-xl font-bold text-slate-900 mb-4 flex items-center gap-2">
+                <i data-lucide="terminal" class="w-6 h-6 text-blue-600"></i> Resumen Profesional
+            </h3>
+            <p class="text-slate-600 leading-relaxed text-[15px]">
+                Arquitecto de Software Senior con más de <strong>9 años de experiencia</strong> diseñando ecosistemas escalables, desde arquitecturas Core Bancarias de alta transaccionalidad hasta soluciones impulsadas por <strong>Inteligencia Artificial</strong>. Me especializo en cerrar la brecha entre la lógica de negocio compleja y la automatización avanzada. <br><br>
+                Actualmente, diseño APIs críticas para el sector financiero e implemento <strong>Agentes LLM y flujos automatizados (n8n, Python, Node.js)</strong> que reducen tiempos operativos y revolucionan embudos de ventas. Mi objetivo es construir productos técnicos que no solo funcionen, sino que transformen negocios.
+            </p>
+        </section>
+
+        <!-- Principales Logros -->
+        <section class="fade-in-up delay-200">
+            <h3 class="text-xl font-bold text-slate-900 mb-6 flex items-center gap-2 px-2">
+                <i data-lucide="trophy" class="w-6 h-6 text-blue-600"></i> Principales Logros e Impacto
+            </h3>
+            
+            <div class="grid gap-4">
+                <!-- Logro 1 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:border-blue-200 transition-colors">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-emerald-100 p-3 rounded-xl text-emerald-600 mt-1">
+                            <i data-lucide="bot" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-lg">Automatización del Ciclo de Desarrollo Bancario</h4>
+                            <p class="text-slate-600 text-sm mt-1 mb-3">Diseñé y programé un Agente de IA para el Core Bancario (Topaz) que traduce requerimientos de negocio en código y lógica de base de datos.</p>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 font-semibold text-sm rounded-lg border border-emerald-200">
+                                <i data-lucide="trending-up" class="w-4 h-4"></i> Aceleró un 60%-70% la etapa de desarrollo inicial.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logro 2 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:border-blue-200 transition-colors">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-blue-100 p-3 rounded-xl text-blue-600 mt-1">
+                            <i data-lucide="shopping-cart" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-lg">Ecosistema E-commerce SaaS Autogestionado</h4>
+                            <p class="text-slate-600 text-sm mt-1 mb-3">Construcción "End-to-End" de un POS (Node.js), E-commerce (React) y PWA de inventarios, operado por un Agente IA (n8n + Groq) para atención al cliente y persuasión.</p>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 font-semibold text-sm rounded-lg border border-emerald-200">
+                                <i data-lucide="zap" class="w-4 h-4"></i> Automatizó el 90% del embudo de ventas.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Logro 3 -->
+                <div class="bg-white rounded-2xl p-6 shadow-sm border border-slate-100 hover:border-blue-200 transition-colors">
+                    <div class="flex items-start gap-4">
+                        <div class="bg-purple-100 p-3 rounded-xl text-purple-600 mt-1">
+                            <i data-lucide="activity" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-lg">Arquitectura de Alta Disponibilidad & Eventos</h4>
+                            <p class="text-slate-600 text-sm mt-1 mb-3">Migración a arquitectura orientada a eventos usando Apache Kafka y Kubernetes para procesar transacciones fallidas de ATMs en línea.</p>
+                            <span class="inline-flex items-center gap-1.5 px-3 py-1 bg-emerald-50 text-emerald-700 font-semibold text-sm rounded-lg border border-emerald-200">
+                                <i data-lucide="timer" class="w-4 h-4"></i> Reducción de tiempo de respuesta de 2 días a 25 segundos.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Aptitudes Técnicas -->
+        <section class="bg-slate-900 text-white rounded-3xl p-8 sm:p-10 shadow-lg fade-in-up delay-300 relative overflow-hidden">
+            <!-- Efecto de brillo -->
+            <div class="absolute top-0 right-0 w-64 h-64 bg-blue-500 rounded-full blur-3xl opacity-20 -mr-20 -mt-20"></div>
+            
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2 relative z-10">
+                <i data-lucide="cpu" class="w-6 h-6 text-blue-400"></i> Stack Tecnológico
+            </h3>
+            
+            <div class="grid sm:grid-cols-2 gap-8 relative z-10">
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Inteligencia Artificial</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Agentes LLM (Gemini, Groq)</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">n8n</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Prompt Engineering</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">IBM Watson</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Arquitectura Backend</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Python</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Node.js</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Flask</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">C# (.Net)</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Apache Kafka</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Microservicios</span>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-3">Infraestructura & Datos</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Docker</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Kubernetes</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">AWS</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">Core Topaz</span>
+                        <span class="px-3 py-1.5 bg-white/10 rounded-lg text-sm font-medium backdrop-blur-sm">SQL Server / Oracle</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer class="text-center text-slate-500 text-sm py-6">
+            <p>Conecta conmigo en <a href="https://linkedin.com/in/carlos-gutierrez-caballero-1934a2174" class="text-blue-600 hover:underline font-medium">LinkedIn</a></p>
+        </footer>
+
+    </div>
+
+    <script is:inline>
+        lucide.createIcons();
+
+        function downloadPDF() {
+            const btn = document.getElementById('pdf-btn');
+            const btnText = document.getElementById('pdf-btn-text');
+            const element = document.getElementById('profile-container');
+            
+            // Estado de carga
+            btnText.innerText = "Generando PDF...";
+            btn.classList.add('opacity-75', 'cursor-not-allowed');
+
+            // Forzar modo escritorio para el PDF
+            element.classList.add('pdf-mode');
+
+            setTimeout(() => {
+                const opt = {
+                    margin:       0, // Margen manejado internamente por el padding de .pdf-mode
+                    filename:     'Carlos_Gutierrez_Perfil.pdf',
+                    image:        { type: 'jpeg', quality: 0.98 },
+                    html2canvas:  { scale: 2, useCORS: true, width: 800, windowWidth: 800 },
+                    jsPDF:        { unit: 'mm', format: 'a4', orientation: 'portrait' },
+                    pagebreak:    { mode: ['css', 'legacy'] }
+                };
+
+                html2pdf().set(opt).from(element).save().then(() => {
+                    // Restaurar interfaz
+                    element.classList.remove('pdf-mode');
+                    btnText.innerText = "Descargar Perfil como PDF";
+                    btn.classList.remove('opacity-75', 'cursor-not-allowed');
+                });
+            }, 300);
+        }
+    </script>
+</body>
+</html>

@@ -55,6 +55,7 @@ import '../styles/global.css';
     </style>
     <!-- Meta Pixel Code -->
         <script is:inline>
+        var fbEventId = 'ev_' + Date.now() + '_' + Math.floor(Math.random() * 1000);
         !function(f,b,e,v,n,t,s)
         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
@@ -64,14 +65,14 @@ import '../styles/global.css';
         s.parentNode.insertBefore(t,s)}(window, document,'script',
         'https://connect.facebook.net/en_US/fbevents.js');
         fbq('init', '1634393287976099');
-        fbq('track', 'PageView');
+        fbq('track', 'PageView', {}, {eventID: fbEventId});
         // 2. Evento Estratégico: Le dice a Meta que están viendo la página de ventas
-        fbq('track', 'ViewContent');
+        fbq('track', 'ViewContent', {}, {eventID: fbEventId});
         // Este evento personalizado es oro puro para hacer retargeting a prospectos calientes
         setTimeout(function() {
             if (typeof fbq !== 'undefined') {
-                fbq('trackCustom', 'TiempoPermanencia30s');
-                console.log('Evento de 30s enviado a Meta');
+                fbq('trackCustom', 'TiempoPermanencia30s', {}, {eventID: fbEventId});
+                console.log('Evento de 30s enviado a Meta con ID:', fbEventId);
             }
         }, 30000);
         </script>
